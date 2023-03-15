@@ -1,0 +1,45 @@
+@media (max-width: 1023px) {
+  .about-contents {
+    padding: 80px 60px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .about-contents {
+    padding: 80px 60px;
+  }
+  .achivement-box {
+    max-width: 170px;
+  }
+}
+
+@media (max-width: 740px) {
+  .about-contents {
+    padding: 40px 10px;
+  }
+  .about-contents > p {
+    margin-bottom: 40px;
+  }
+  .text-timeline {
+    top: 12%;
+    gap: 30px;
+    left: 30px;
+  }
+  .years {
+    font-size: 20px;
+  }
+  .text-years {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .achivement-about {
+    overflow-x: auto;
+  }
+  .achivement-about::-webkit-scrollbar {
+    display: none;
+  }
+}

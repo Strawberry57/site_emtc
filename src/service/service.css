@@ -1,0 +1,47 @@
+.services-content {
+  padding: 120px 210px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.service-list {
+  min-width: 230px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-list > li {
+  color: #7f8183;
+  padding: 40px 0px;
+  border-bottom: 1px dashed #7f8183;
+  cursor: pointer;
+}
+
+.service-list > li:last-child {
+  border-bottom: 0;
+}
+
+.service-list .selected {
+  color: #2b5aa9;
+  font-weight: 500;
+}
+
+.preview {
+  width: 90%;
+}
+
+.sub-content {
+  width: 90%;
+}
+
+.sub-content > h4 {
+  font-size: 25px;
+  margin: 50px 0 25px 0;
+}
+
+.sub-content > p {
+  letter-spacing: 0.2px;
+  color: #1e1e1f;
+  line-height: 24px;
+}

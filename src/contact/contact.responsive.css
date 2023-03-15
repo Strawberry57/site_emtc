@@ -1,0 +1,27 @@
+@media (max-width: 1023px) {
+  .contact-content {
+    padding: 80px 60px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .contact-content {
+    padding: 80px 60px;
+  }
+}
+
+@media (max-width: 740px) {
+  .contact-content {
+    padding: 40px 20px;
+  }
+  .contact-infor {
+    flex-direction: column;
+  }
+  .contact-infor .contact-box {
+    justify-content: flex-start;
+  }
+  .contact-input {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
