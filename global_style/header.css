@@ -1,7 +1,9 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 210px;
+  padding: 24px 0px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .nav-bar {
@@ -33,7 +35,7 @@
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .header {
-    padding: 24px 100px;
+    padding: 24px 60px;
   }
 }
 

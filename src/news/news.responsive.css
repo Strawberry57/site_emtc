@@ -15,7 +15,7 @@
 
 @media (max-width: 740px) {
   .news-content {
-    padding: 60px 10px;
+    padding: 60px 10px 20px 10px;
   }
   .news-detail {
     flex-direction: column;

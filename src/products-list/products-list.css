@@ -1,5 +1,5 @@
 .search-product {
-  padding: 80px 210px;
+  padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,11 +36,11 @@
 }
 
 .products-content {
-  padding: 50px 210px;
+  padding: 50px 0;
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(232px, 7fr));
-  grid-gap: 32px;
+  grid-gap: 90px;
   justify-items: center;
 }
 
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 210px 80px 210px;
+  padding: 0 0 80px 0;
 }
 
 .contact {

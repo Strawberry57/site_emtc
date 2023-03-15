@@ -1,7 +1,11 @@
 .footer {
-  padding: 120px 210px;
+  padding: 120px 0;
   background: #eaeff7;
   padding-bottom: 0;
+}
+
+.container-footer {
+  background: #eaeff7 !important;
 }
 
 .footer-infor {
@@ -87,7 +91,7 @@
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .footer {
-    padding: 60px 100px;
+    padding: 60px;
     padding-bottom: 0;
   }
   .field > input {

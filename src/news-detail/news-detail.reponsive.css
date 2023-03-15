@@ -14,15 +14,15 @@
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .related-news {
-    padding: 80px 100px;
+    padding: 80px 60px;
   }
   .news-related-list {
     flex-wrap: wrap;
-    gap: 60px;
-    justify-content: center;
+    gap: 48px;
+    justify-content: initial;
   }
   .news-detail-content {
-    padding: 80px 100px;
+    padding: 80px 60px;
   }
 }
 

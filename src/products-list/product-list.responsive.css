@@ -28,6 +28,7 @@
   }
   .products-content {
     padding: 50px 60px;
+    grid-gap: 30px;
   }
   .contact-paginator {
     padding: 0 60px 80px 60px;

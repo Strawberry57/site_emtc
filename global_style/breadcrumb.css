@@ -1,12 +1,16 @@
 .breadcrumb {
-  background: linear-gradient(rgba(46, 48, 54, 0.7), rgba(34, 38, 42, 0.7)),
-    url("../assets/imgs/background-breadcrumb.png");
   min-height: 300px;
-  padding: 120px 210px;
+  padding: 120px 0;
   color: #fff;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.breadcrumb-container {
+  background: linear-gradient(rgba(46, 48, 54, 0.7), rgba(34, 38, 42, 0.7)),
+    url("../assets/imgs/background-breadcrumb.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -31,7 +35,7 @@
 
 @media (min-width: 740px) and (max-width: 1023px) {
   .breadcrumb {
-    padding: 120px 100px;
+    padding: 120px 60px;
   }
 }
 

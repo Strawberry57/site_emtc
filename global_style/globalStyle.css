@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Golos Text", sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   font-weight: 400;
 }
@@ -63,6 +63,14 @@ ul {
 
 .btn:hover .rect-btn {
   fill: #f4f000;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.container {
+  position: relative;
 }
 @media (max-width: 740px) {
   html {
