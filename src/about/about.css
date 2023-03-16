@@ -82,6 +82,7 @@
   gap: 60px;
   left: 50px;
   align-items: center;
+  transform: translateY(-45%);
 }
 .years {
   font-size: 35px;

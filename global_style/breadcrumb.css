@@ -41,7 +41,7 @@
 
 @media (max-width: 740px) {
   .breadcrumb {
-    padding: 16px;
+    padding: 50px 16px;
     min-height: initial;
   }
   .breadcrumb > h3 {

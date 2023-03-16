@@ -8,6 +8,7 @@
   .products-content {
     padding: 50px 60px;
     grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 7fr));
   }
 }
 

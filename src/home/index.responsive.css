@@ -18,43 +18,75 @@
     margin: auto;
   }
   .about-box {
-    padding: 120px 60px;
+    padding: 80px 60px;
+    flex-direction: column;
+  }
+  .about-box-detail {
+    text-align: center;
+    width: 100%;
+  }
+  .about-box-img {
+    text-align: center;
+    width: 100%;
   }
   .servive-box-img .more-detail {
-    bottom: 80px;
-    left: -60px;
+    bottom: 0;
+    left: -0;
   }
   .service-box {
-    padding: 120px 60px;
+    padding: 80px 60px;
+    flex-direction: column;
+  }
+  .service-box-detail {
+    text-align: center;
+  }
+  .service-box-detail > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .service-box-detail .selected {
+    border: 0;
+    font-weight: 600;
+  }
+  .servive-box-img {
+    text-align: center;
   }
   .product-header {
-    padding: 120px 100px;
+    padding: 80px 60px;
   }
   .product-box {
-    padding: 0 100px 120px 100px;
+    padding: 0 60px 80px 60px;
   }
   .product-detail {
-    gap: 130px;
+    gap: 32px;
     flex-wrap: wrap;
     justify-content: center;
   }
+  .box-product {
+    flex: 1;
+    height: 100%;
+  }
+  .box-product > img {
+    width: initial;
+  }
   .news-header > h3 {
-    padding: 120px 100px;
+    padding: 80px 60px;
   }
   .news-box {
-    padding: 0 60px 120px 60px;
+    padding: 0 60px 80px 60px;
   }
   .contact-box {
-    padding: 120px 60px;
+    padding: 80px 60px;
   }
   .partners-box {
-    padding: 120px 60px;
+    padding: 80px 60px;
   }
 }
 
 @media (max-width: 740px) {
   .header {
-    padding: 10px;
+    padding: 10px 16px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -63,15 +95,18 @@
     gap: 12px;
   }
   .hero-box-detail > h3 {
-    font-size: 25px;
+    font-size: 24px;
+  }
+  .about-box-detail > h3 {
+    font-size: 24px;
   }
   .hero-box {
     height: 350px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .about-box {
-    padding: 80px 10px;
+    padding: 80px 16px;
     flex-direction: column;
     align-items: center;
   }
@@ -83,10 +118,13 @@
   }
   .video-box {
     height: 220px;
+    padding: 24px 0;
   }
   .video-box-detail {
     width: initial;
-    margin: -200px auto;
+  }
+  .service-box-detail > h3 {
+    font-size: 24px;
   }
   .video-box-detail > h3 {
     font-size: 20px;
@@ -97,11 +135,12 @@
     width: 50px;
   }
   .service-box {
-    padding: 80px 10px;
+    padding: 40px 16px;
     flex-direction: column;
   }
   .servive-box-img > img {
     width: 100%;
+    margin-top: 0;
   }
   .servive-box-img .more-detail {
     bottom: 10px;
@@ -116,18 +155,19 @@
     text-overflow: ellipsis;
   }
   .product-header {
-    padding: 60px 10px;
+    padding: 60px 16px;
   }
   .product-header > h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .product-box {
-    padding: 0 10px;
+    padding: 0 16px;
     padding-bottom: 60px;
   }
   .box-product {
-    height: 170px;
-    width: 136px;
+    height: auto;
+    width: initial;
+    flex: 1;
   }
   .box-product > img {
     height: 100px;
@@ -136,13 +176,19 @@
   .product-detail {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
   }
   .news-header > h3 {
-    padding: 80px 10px;
+    padding: 40px 16px;
     padding-bottom: 0;
+    font-size: 24px;
   }
   .news-box {
-    padding: 80px 10px;
+    padding: 40px 16px;
+  }
+  .news-detail .news-img .infor {
+    bottom: 15px;
+    left: 10px;
   }
   .news-detail {
     flex-direction: column;
@@ -151,14 +197,17 @@
     width: 370px;
   }
   .contact-box {
-    padding: 80px 10px;
+    padding: 80px 16px;
     flex-direction: column;
+  }
+  .contact-text > h3 {
+    font-size: 24px;
   }
   .contact-text {
     width: initial;
   }
   .partners-box {
-    padding: 80px 10px;
+    padding: 80px 16px;
     flex-wrap: wrap;
     gap: 13px;
     justify-content: center;
