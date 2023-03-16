@@ -13,6 +13,7 @@
   justify-content: space-between;
   gap: 32px;
   margin: 32px 0;
+  margin-bottom: 64px;
 }
 
 .contact-infor .contact-box {
@@ -68,4 +69,8 @@
   border: 1px solid #d9dbdd;
   resize: none;
   font-family: "Poppins", sans-serif !important;
+}
+
+.mid-input > textarea::-webkit-scrollbar {
+  display: none;
 }

@@ -357,6 +357,9 @@
   display: flex;
   gap: 12px;
 }
+.infor-contact > input {
+  font-family: "Poppins", sans-serif !important;
+}
 
 .message {
   padding: 12px;
@@ -366,6 +369,11 @@
 
 .textmessage {
   min-height: 100px;
+  font-family: "Poppins", sans-serif !important;
+  resize: none;
+}
+.textmessage::-webkit-scrollbar {
+  display: none;
 }
 
 .partners-box {
