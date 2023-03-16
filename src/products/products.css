@@ -3,7 +3,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(232px, 7fr));
-  grid-gap: 90px;
+  grid-gap: 2rem;
   justify-items: center;
 }
 

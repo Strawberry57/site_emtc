@@ -38,7 +38,7 @@
   color: #000;
   cursor: pointer;
 }
-.footer-quick-link > p,
+.footer-quick-link > a > p,
 .footer-help > p {
   color: #2b5aa9;
   letter-spacing: 0.5px;
@@ -61,6 +61,7 @@
   border: 0;
   border-radius: 6px 0 0 6px;
   min-width: 300px;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .field-input:focus-visible {
