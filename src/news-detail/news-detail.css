@@ -34,6 +34,9 @@
   /* gap: 32px; */
   align-items: center;
   justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 7fr));
+  grid-gap: 2rem;
 }
 
 .news-detail-box {
@@ -45,7 +48,7 @@
   min-width: 220px;
 }
 .news-detail-box > a {
-  text-align: center;
+  text-align: left;
 }
 
 .text-news-related {

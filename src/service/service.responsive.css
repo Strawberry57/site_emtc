@@ -26,6 +26,7 @@
   }
   .service-list {
     padding: 0 50px;
+    position: initial;
   }
   .service-list > li {
     padding: 15px 0px;

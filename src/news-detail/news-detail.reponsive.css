@@ -24,6 +24,9 @@
   .news-detail-content {
     padding: 80px 60px;
   }
+  .news-detail-box > a > img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 740px) {
