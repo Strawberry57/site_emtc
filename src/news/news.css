@@ -164,7 +164,7 @@
 .paginator > img {
   cursor: pointer;
 }
-.paginator .selected {
+.paginator .selected_pag {
   background: #2b5aa9;
   color: #fff;
 }
