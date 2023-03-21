@@ -127,13 +127,57 @@
       </div>
         <div class="container">
           <div class="paginator content-container">
-            <img alt="" src="../../assets/svgs/chevron_left.svg" />
-            <span class="selected">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-  
-            <img alt="" src="../../assets/svgs/chevron_right.svg" />
+            <svg
+            onclick="backPage()"
+            class="left-carousel"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_1960_3156)">
+              <path
+                class="fill_left_carousel"
+                d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z"
+                fill="#A5A8AA"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_1960_3156">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span id="1" onclick="changePaginator(1)" class="page selected_pag"
+            >1</span
+          >
+          <span id="2" class="page" onclick="changePaginator(2)">2</span>
+          <span id="3" class="page" onclick="changePaginator(3)">3</span>
+          <span id="4" class="page" onclick="changePaginator(4)">4</span>
+
+          <svg
+            onclick="nextPage()"
+            class="right-carousel"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_1960_3160)">
+              <path
+                class="fill_right_carousel"
+                d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z"
+                fill="#2B5AA9"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_1960_3160">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
           </div>
         </div>
       </div>
@@ -185,5 +229,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/product.js"></script>
   </body>
 </html>

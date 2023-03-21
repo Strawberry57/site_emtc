@@ -98,54 +98,83 @@
       <div class="container">
         <div class="search-product content-container">
           <div class="search-btn">
-            <input type="text" placeholder="Search..." />
-            <img src="../../assets/svgs/search.svg" alt="" />
+            <input class="search-input" type="text" placeholder="Search..." />
+            <img
+              onclick="searchFnc()"
+              src="../../assets/svgs/search.svg"
+              alt=""
+            />
           </div>
-          <div class="expand-btn">
-            Alphabetically: A to Z
-            <img src="../../assets/svgs/expand_more.svg" alt="" />
+          <div class="expand-box">
+            <div class="expand-btn">
+              <p class="text-expand">Alphabetically: A to Z</p>
+              <img src="../../assets/svgs/expand_more.svg" alt="" />
+            </div>
+            <ul class="expand-option">
+              <li onclick="selectFilterFnc('AtZ')">A to Z</li>
+              <li onclick="selectFilterFnc('ZtA')">Z to A</li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="products-content content-container">
-          <a href="#">
-            <div class="box-goods">
-              <img alt="" src="../../assets/imgs/bac-han.png" />
-              <div>Bạc hàn</div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="box-goods">
-              <img alt="" src="../../assets/imgs/bac-thuc.png" />
-              <div>Bạc thúc</div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="box-goods">
-              <img alt="" src="../../assets/imgs/auto_by.png" />
-              <div>Bộ dụng cụ Toyota</div>
-            </div>
-          </a>
-          <a href="#">
-            <div class="box-goods">
-              <img alt="" src="../../assets/imgs/bo-dung-cu-xe-may.png" />
-              <div>Bộ dụng cụ xe máy</div>
-            </div>
-          </a>
-        </div>
+        <div class="products-content content-container"></div>
       </div>
       <div class="container">
         <div class="contact-paginator content-container">
           <div class="contact">liên hệ đặt hàng ngay</div>
           <div class="paginator">
-            <img alt="" src="../../assets/svgs/chevron_left.svg" />
-            <span class="selected">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
+            <svg
+              onclick="backPage()"
+              class="left-carousel"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1960_3156)">
+                <path
+                  class="fill_left_carousel"
+                  d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z"
+                  fill="#A5A8AA"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1960_3156">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span id="1" onclick="changePaginator(1)" class="page selected_pag"
+              >1</span
+            >
+            <span id="2" class="page" onclick="changePaginator(2)">2</span>
+            <span id="3" class="page" onclick="changePaginator(3)">3</span>
+            <span id="4" class="page" onclick="changePaginator(4)">4</span>
 
-            <img alt="" src="../../assets/svgs/chevron_right.svg" />
+            <svg
+              onclick="nextPage()"
+              class="right-carousel"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1960_3160)">
+                <path
+                  class="fill_right_carousel"
+                  d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z"
+                  fill="#2B5AA9"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1960_3160">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </div>
         </div>
       </div>
@@ -197,5 +226,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/product.js"></script>
   </body>
 </html>
