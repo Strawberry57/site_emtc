@@ -73,12 +73,28 @@
       <div class="container">
         <div class="services-content content-container">
           <ul class="service-list">
-            <li class="selected">Quality Control</li>
-            <li>Forging & Pressing</li>
-            <li>Tooling & Manufacture</li>
-            <li>Machining</li>
-            <li>Coating & Plating</li>
-            <li>Heat & Treatment</li>
+            <li
+              id="0_li"
+              onclick="selectFnc(this.id)"
+              class="list_li selected_li"
+            >
+              Quality Control
+            </li>
+            <li id="1_li" onclick="selectFnc(this.id)" class="list_li">
+              Forging & Pressing
+            </li>
+            <li id="2_li" onclick="selectFnc(this.id)" class="list_li">
+              Tooling & Manufacture
+            </li>
+            <li id="3_li" onclick="selectFnc(this.id)" class="list_li">
+              Machining
+            </li>
+            <li id="4_li" onclick="selectFnc(this.id)" class="list_li">
+              Coating & Plating
+            </li>
+            <li id="5_li" onclick="selectFnc(this.id)" class="list_li">
+              Heat & Treatment
+            </li>
           </ul>
           <div class="content">
             <div class="preview">
@@ -108,8 +124,8 @@
               </div>
             </div>
             <div class="sub-content">
-              <h4>Quality Control</h4>
-              <p>
+              <h4 class="header-sub-service">Quality Control</h4>
+              <p class="content-sub-service">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Habitasse eu tristique tempor habitasse pharetra arcu eu tempus
                 justo. Et sed elit mauris eget. Aliquam ut viverra nisl, nam
@@ -206,5 +222,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/service.js"></script>
   </body>
 </html>
