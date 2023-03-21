@@ -151,26 +151,44 @@
               Services In Many Industries
             </h3>
             <ul>
-              <li class="selected">Quality Control</li>
-              <li>Forging & Pressing</li>
-              <li>Tooling & Manufacture</li>
-              <li>Machining</li>
-              <li>Coating & Plating</li>
-              <li>Heat & Treatment</li>
+              <li id="0_li" onclick="selectFnc(this.id)" class="list_li selected_li">Quality Control</li>
+              <li id="1_li" onclick="selectFnc(this.id)" class="list_li">Forging & Pressing</li>
+              <li id="2_li" onclick="selectFnc(this.id)" class="list_li">Tooling & Manufacture</li>
+              <li id="3_li" onclick="selectFnc(this.id)" class="list_li">Machining</li>
+              <li id="4_li" onclick="selectFnc(this.id)" class="list_li">Coating & Plating</li>
+              <li id="5_li" onclick="selectFnc(this.id)" class="list_li">Heat & Treatment</li>
             </ul>
           </div>
           <div class="servive-box-img">
-            <img src="../../assets/imgs/service.png" alt="" />
+            <img class="image-show" src="../../assets/imgs/service.png" alt="" />
             <div class="more-detail">
-              <p>
+              <p class="text-show">
                 Consequently, we not only control carefully in each workshop, but
                 also invest many modern equipments su...
               </p>
               <span>READ MORE</span>
             </div>
             <div class="pagintor">
-              <img src="../../assets/svgs/chevron_left.svg" alt="" />
-              <img src="../../assets/svgs/chevron_right.svg" alt="" />
+              <svg class="left-carousel" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1960_3156)">
+                <path class="fill_left_carousel" d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="#A5A8AA"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1960_3156">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                <svg class="right-carousel" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1960_3160)">
+                  <path class="fill_right_carousel" d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z" fill="#2B5AA9"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1960_3160">
+                  <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
             </div>
           </div>
         </div>
@@ -179,8 +197,26 @@
         <div class="product-header content-container">
           <h3>Featured Categories</h3>
           <div class="pagintor">
-            <img src="../../assets/svgs/chevron_left.svg" alt="" />
-            <img src="../../assets/svgs/chevron_right.svg" alt="" />
+            <svg class="left-carousel-product" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1960_3156)">
+              <path class="fill_left_pro_carousel" d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="#A5A8AA"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_1960_3156">
+              <rect width="24" height="24" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              <svg class="right-carousel-product" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1960_3160)">
+                <path class="fill_right_pro_carousel" d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z" fill="#2B5AA9"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1960_3160">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
           </div>
         </div>
     </div>
@@ -198,6 +234,14 @@
             <div class="box-product">
               <img src="../../assets/imgs/product-3.png" alt="" />
               <div>Auto & Motorcycle</div>
+            </div>
+            <div class="box-product">
+              <img src="../../assets/imgs/product-4.png" alt="" />
+              <div>Handtools</div>
+            </div>
+             <div class="box-product">
+              <img src="../../assets/imgs/product-4.png" alt="" />
+              <div>Handtools</div>
             </div>
             <div class="box-product">
               <img src="../../assets/imgs/product-4.png" alt="" />
@@ -364,5 +408,6 @@
         </div>
     </div>
     </div>
+    <script src="../js/carousel.js" ></script>
   </body>
 </html>
