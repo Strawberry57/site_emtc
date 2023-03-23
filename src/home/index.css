@@ -324,11 +324,11 @@
 
 .product-detail {
   display: flex;
-  gap: 52px;
+  gap: 40px;
 }
 
 .box-product {
-  padding: 18px;
+  padding: 18px 22px;
   display: flex;
   flex-direction: column;
   background: #fdfdfd;
