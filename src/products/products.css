@@ -1,5 +1,5 @@
 .products-content {
-  padding: 48px 0;
+  padding: 80px 0;
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(232px, 7fr));
@@ -78,7 +78,7 @@
 
 .product-name {
   color: #fdfdfd;
-  font-weight: 500;
+  font-weight: 600;
   size: 20px;
 }
 

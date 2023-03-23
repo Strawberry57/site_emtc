@@ -1,5 +1,5 @@
 .services-content {
-  padding: 120px 0;
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -19,6 +19,7 @@
   padding: 40px 0px;
   border-bottom: 1px dashed #7f8183;
   cursor: pointer;
+  padding-bottom: 24px;
 }
 
 .service-list > li:last-child {

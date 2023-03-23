@@ -1,3 +1,6 @@
+h3 {
+  line-height: 46px;
+}
 .hero-box {
   display: flex;
   flex-direction: column;
@@ -100,6 +103,7 @@
   font-weight: 700;
   text-align: center;
   display: flex;
+  width: 692px;
 }
 
 .video-box-detail > svg {
@@ -149,7 +153,7 @@
 
 .servive-box-img .more-detail {
   position: absolute;
-  max-width: 320px;
+  max-width: 346px;
   padding: 16px;
   background: #2b5aa9;
   bottom: 10px;
@@ -173,6 +177,7 @@
 .more-detail > span:hover {
   padding-bottom: 2px;
   border-bottom: 2px solid #ffd500;
+  cursor: pointer;
 }
 
 .servive-box-img .more-detail > span {
@@ -212,6 +217,7 @@
 
 .news-detail .news-img:hover .infor > p {
   color: #f4f000;
+  cursor: pointer;
 }
 
 .news-detail .newsss {
@@ -235,7 +241,7 @@
 
 .news-detail .news-img .infor {
   position: absolute;
-  bottom: 45px;
+  bottom: 30px;
   left: 20px;
 }
 
@@ -264,7 +270,7 @@
   line-height: 1.5;
   padding-bottom: 20px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #7f8183;
+  border-bottom: 1px solid #d9dbdd;
   cursor: pointer;
 }
 
@@ -324,16 +330,17 @@
 
 .product-detail {
   display: flex;
-  gap: 52px;
+  gap: 32px;
 }
 
 .box-product {
-  padding: 18px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   background: #fdfdfd;
   align-items: center;
   gap: 20px;
+  font-weight: 600;
 }
 
 .box-product > img {
@@ -359,10 +366,20 @@
 .contact-text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   line-height: 1.5;
   color: #fff;
   width: 50%;
+}
+.news-detail .news-img .background-news {
+  height: initial;
+  width: initial;
+  -webkit-transition: initial;
+  -moz-transition: initial;
+  -ms-transition: initial;
+  transition: initial;
+  position: absolute;
+  bottom: 0;
 }
 
 .contact-text > p {
@@ -378,7 +395,7 @@
 
 .infor-contact {
   display: flex;
-  gap: 12px;
+  gap: 24px;
 }
 .infor-contact > input {
   font-family: "Poppins", sans-serif !important;

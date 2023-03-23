@@ -75,10 +75,10 @@ function selectFnc(e) {
 
 arrowRight_product.addEventListener("click", () => {
   const product_detail = document.querySelector(".product-detail");
-  const maxValue = -290 * (box_product.length - 4);
+  const maxValue = -264 * (box_product.length - 4);
   if (box_product.length > 4) {
     if (value > maxValue) {
-      value = value + -290;
+      value = value + -264;
       fill_left_pro.style.fill = "#2B5AA9";
     }
     if (value === maxValue) fill_right_pro.style.fill = "#A5A8AA";
@@ -92,7 +92,7 @@ arrowLeft_product.addEventListener("click", () => {
   const product_detail = document.querySelector(".product-detail");
   if (box_product.length > 4) {
     if (value < 0) {
-      value = value + 290;
+      value = value + 264;
       fill_right_pro.style.fill = "#2B5AA9";
     }
     if (value === 0) fill_left_pro.style.fill = "#A5A8AA";
