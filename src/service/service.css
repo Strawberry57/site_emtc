@@ -17,7 +17,7 @@
 .service-list > li {
   color: #7f8183;
   padding: 40px 0px;
-  border-bottom: 1px dashed #7f8183;
+  border-bottom: 1px dashed #c0cee6;
   cursor: pointer;
   padding-bottom: 24px;
 }
@@ -25,15 +25,19 @@
 .service-list > li:last-child {
   border-bottom: 0;
 }
+.service-list > li:first-child {
+  padding-top: 0;
+}
 
 .service-list .selected_li {
   color: #2b5aa9;
   font-weight: 500;
+  font-family: "svn-semibold";
 }
 
-.preview {
+/* .preview {
   width: 90%;
-}
+} */
 
 .sub-content {
   width: 90%;

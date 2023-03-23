@@ -1,6 +1,3 @@
-h3 {
-  line-height: 46px;
-}
 .hero-box {
   display: flex;
   flex-direction: column;
@@ -153,7 +150,7 @@ h3 {
 
 .servive-box-img .more-detail {
   position: absolute;
-  max-width: 346px;
+  max-width: 305px;
   padding: 16px;
   background: #2b5aa9;
   bottom: 10px;
