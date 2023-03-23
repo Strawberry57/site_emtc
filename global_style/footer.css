@@ -55,6 +55,22 @@
   border-radius: 0px 6px 6px 0px;
   padding: 10px;
 }
+.field > svg {
+  background: #2b5aa9;
+  border-radius: 0px 6px 6px 0px;
+  /* padding: 10px; */
+  height: 48px;
+  width: 50px;
+  /* padding: 0 25px; */
+  padding: 2px 10px;
+  cursor: pointer;
+}
+.field > svg:hover {
+  background: #d1ce0d;
+}
+.field > svg:hover .rowpath {
+  fill: #2b5aa9 !important;
+}
 
 .field > input {
   padding: 14px 15px;
@@ -75,6 +91,15 @@
   justify-content: center;
   text-align: center;
   gap: 20px;
+}
+
+.linking-footer > a > svg:hover .cricle_svg {
+  stroke: #d1ce0d;
+  cursor: pointer;
+}
+
+.linking-footer > a > svg:hover .path_link {
+  fill: #d1ce0d;
 }
 
 @media (max-width: 1023px) {
