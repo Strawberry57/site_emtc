@@ -8,6 +8,14 @@
   .contact-content {
     padding: 80px 60px;
   }
+  .contact-infor {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-infor .contact-box {
+    width: 50%;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 740px) {

@@ -268,8 +268,18 @@
   cursor: pointer;
 }
 
-.news-detail > ul > li:hover > p {
+.news-detail > ul > li > p:hover {
   color: #2b5aa9;
+  animation: hoverText 0.5s ease-in-out;
+}
+
+@keyframes hoverText {
+  from {
+    color: #000;
+  }
+  to {
+    color: #2b5aa9;
+  }
 }
 
 .news-detail > ul > li:last-child {
@@ -281,7 +291,7 @@
 }
 
 .news-detail > ul > li > p {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .container-product {

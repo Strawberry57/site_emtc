@@ -11,6 +11,16 @@
   .news-detail > ul > li {
     gap: 0;
   }
+  .text_news {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .infor-news > a {
+    gap: 14px;
+  }
 }
 
 @media (max-width: 740px) {
@@ -43,6 +53,12 @@
   }
   .infor-news {
     flex: 1;
+  }
+  .infor-news > a {
+    gap: 5px;
+  }
+  .infor-news > a > div {
+    gap: 2px;
   }
   .date-news {
     font-size: 13px;

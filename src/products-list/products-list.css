@@ -101,6 +101,11 @@
   text-transform: uppercase;
   color: #fff;
   background: #2b5aa9;
+  cursor: pointer;
+}
+.contact:hover {
+  background-color: rgb(206, 206, 22);
+  color: #2b5aa9;
 }
 
 .paginator {

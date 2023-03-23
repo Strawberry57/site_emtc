@@ -1,5 +1,5 @@
 .products-content {
-  padding: 50px 0;
+  padding: 48px 0;
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(232px, 7fr));
@@ -37,6 +37,19 @@
 .box-goods:hover .product-detail {
   /* transform: translateY(-10px); */
   transform: translateY(0);
+}
+.box-goods:hover::before {
+  filter: brightness(0);
+  animation: brightness ease-in-out 0.5s;
+}
+
+@keyframes brightness {
+  from {
+    filter: brightness(0.7);
+  }
+  to {
+    filter: brightness(0);
+  }
 }
 
 .box-goods:before {
