@@ -49,6 +49,16 @@
   -ms-transition: all 1s ease;
   transition: all 1s ease;
 }
+.news-detail .news-img .background-news {
+  height: initial;
+  width: initial;
+  -webkit-transition: initial;
+  -moz-transition: initial;
+  -ms-transition: initial;
+  transition: initial;
+  position: absolute;
+  bottom: 0;
+}
 
 .news-detail .news-img:hover > img {
   transform: scale(1.1);

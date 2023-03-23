@@ -52,7 +52,7 @@
 
 .top-input {
   display: flex;
-  gap: 12px;
+  gap: 24px;
 }
 
 .top-input > input {

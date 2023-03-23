@@ -91,6 +91,10 @@
   .partners-box {
     padding: 80px 60px;
   }
+  .video-box-detail > h3 {
+    width: initial;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 740px) {
@@ -138,9 +142,13 @@
   .servive-box-img {
     min-width: initial;
   }
+  .video-box-detail {
+    gap: 0;
+  }
   .video-box-detail > h3 {
     font-size: 20px;
     padding: 0 20px;
+    width: initial;
   }
   .btn-video {
     height: 50px;

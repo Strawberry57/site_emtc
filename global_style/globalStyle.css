@@ -3,9 +3,29 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  src: url("../assets/font/SVN-GilroyBold.otf") format("opentype");
+
+  font-family: "svn-bold";
+}
+@font-face {
+  src: url("../assets/font/SVN-GilroyMedium.otf") format("opentype");
+
+  font-family: "svn-medium";
+}
+@font-face {
+  src: url("../assets/font/SVN-GilroyRegular.otf") format("opentype");
+
+  font-family: "svn-regular";
+}
+@font-face {
+  src: url("../assets/font/SVN-GilroySemiBold.otf") format("opentype");
+
+  font-family: "svn-semibold";
+}
 
 html {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "svn-regular", sans-serif !important;
   scroll-behavior: smooth;
   font-weight: 400;
 }
@@ -69,7 +89,7 @@ li {
 }
 
 .content-container {
-  max-width: 1100px;
+  max-width: 1024px;
   margin: auto;
 }
 .container {
