@@ -149,9 +149,15 @@
     display: flex;
     text-align: center;
   }
+  .footer_subtext {
+    justify-content: center;
+  }
   .footer-child > div {
     display: flex;
     text-align: center;
     width: 100% !important;
+  }
+  .field > input {
+    width: 100%;
   }
 }

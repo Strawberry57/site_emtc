@@ -18,6 +18,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  .infor-news > a {
+    gap: 14px;
+  }
 }
 
 @media (max-width: 740px) {

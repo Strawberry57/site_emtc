@@ -69,6 +69,9 @@
   .pagintor {
     display: none;
   }
+  .page_ser {
+    display: flex;
+  }
   .box-product {
     flex: 1;
     height: 100%;
