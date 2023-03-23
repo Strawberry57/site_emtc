@@ -32,6 +32,7 @@ html {
 h3 {
   font-size: 36px;
   font-weight: 700;
+  font-family: "svn-semibold", sans-serif !important;
 }
 a {
   color: #000;
