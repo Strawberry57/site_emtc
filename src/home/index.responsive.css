@@ -66,6 +66,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .product-detail > a {
+    display: flex;
+    flex: 1;
+  }
   .pagintor {
     display: none;
   }
@@ -201,6 +205,11 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+  }
+
+  .product-detail > a {
+    display: flex;
+    flex: 1;
   }
   .pagintor {
     display: none;
