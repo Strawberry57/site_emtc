@@ -44,11 +44,14 @@
   .news-sub-content {
     gap: 15px;
   }
-  .news-sub-content > a {
+  /* .news-sub-content > a {
     width: 100px;
+  } */
+  .news-sub-content > a {
+    gap: 15px;
   }
   .news-sub-content > a > img {
-    width: 100%;
+    width: 30%;
     object-fit: cover;
   }
   .infor-news {

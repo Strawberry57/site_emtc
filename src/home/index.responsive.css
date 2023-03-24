@@ -147,7 +147,7 @@
     min-width: initial;
   }
   .video-box-detail {
-    gap: 0;
+    gap: 15px;
   }
   .video-box-detail > h3 {
     font-size: 20px;
