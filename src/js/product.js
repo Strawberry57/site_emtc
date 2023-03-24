@@ -25,6 +25,54 @@ const listProduct = [
     name: "Bộ dụng cụ xe máy",
     img: "../../assets/imgs/bo-dung-cu-xe-may.png",
   },
+  {
+    name: "Bạc hàn",
+    img: "../../assets/imgs/bac-han.png",
+  },
+  {
+    name: "Bạc thúc",
+    img: "../../assets/imgs/bac-thuc.png",
+  },
+  {
+    name: "Bộ dụng cụ Toyota",
+    img: "../../assets/imgs/auto_by.png",
+  },
+  {
+    name: "Bộ dụng cụ xe máy",
+    img: "../../assets/imgs/bo-dung-cu-xe-may.png",
+  },
+  {
+    name: "Bạc hàn",
+    img: "../../assets/imgs/bac-han.png",
+  },
+  {
+    name: "Bạc thúc",
+    img: "../../assets/imgs/bac-thuc.png",
+  },
+  {
+    name: "Bộ dụng cụ Toyota",
+    img: "../../assets/imgs/auto_by.png",
+  },
+  {
+    name: "Bộ dụng cụ xe máy",
+    img: "../../assets/imgs/bo-dung-cu-xe-may.png",
+  },
+  {
+    name: "Bạc hàn",
+    img: "../../assets/imgs/bac-han.png",
+  },
+  {
+    name: "Bạc thúc",
+    img: "../../assets/imgs/bac-thuc.png",
+  },
+  {
+    name: "Bộ dụng cụ Toyota",
+    img: "../../assets/imgs/auto_by.png",
+  },
+  {
+    name: "Bộ dụng cụ xe máy",
+    img: "../../assets/imgs/bo-dung-cu-xe-may.png",
+  },
 ];
 
 expand_options.style.display = "none";

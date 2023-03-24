@@ -4,12 +4,12 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 80px 0;
+  padding: 180px 0;
 }
 .container-hero-box {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgb(19 30 68 / 70%), rgba(26, 34, 39, 0.7)),
+  background-image: linear-gradient(rgb(16 18 27 / 54%), rgb(20 28 33 / 0%)),
     url("../../assets/imgs/hero-background.png");
 }
 
@@ -122,11 +122,11 @@
   margin-bottom: 40px;
   margin-left: 24px;
 }
-
 .service-box-detail > ul {
   list-style: none;
   color: #7f8183;
   font-weight: 500;
+  position: relative;
 }
 
 .service-box-detail > ul > li {
@@ -161,6 +161,20 @@
   color: #fff;
   margin-bottom: 20px;
   line-height: 1.5;
+}
+.list-background {
+  position: absolute;
+  top: -70px;
+  font-size: 270px;
+  z-index: -1;
+  font-weight: 600;
+  letter-spacing: 10.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(59 136 165 / 12%);
+  left: 25px;
 }
 
 .image-show {
@@ -346,13 +360,14 @@
   object-fit: cover;
 }
 .container-contact-box {
-  background: linear-gradient(rgb(19 30 68 / 70%), rgb(6 50 81 / 70%)),
-    url("../../assets/imgs/hero-background.png");
+  /* background: linear-gradient(rgb(19 30 68 / 70%), rgb(6 50 81 / 70%)),
+    url("../../assets/imgs/backg_get_touch.png"); */
+  background: url("../../assets/imgs/backg_get_touch.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .contact-box {
-  padding: 120px 0;
+  padding: 60px 0;
   display: flex;
   min-height: 360px;
   background-size: cover;

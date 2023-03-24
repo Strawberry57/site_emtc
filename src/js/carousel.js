@@ -71,6 +71,8 @@ function selectFnc(e) {
     imageShow.src = listImage[number].src;
     textShow.innerHTML = listImage[number].text;
   }
+  const back = document.querySelector(".list-background");
+  back.innerHTML = `0` + (Number(e) + 1);
 }
 
 arrowRight_product.addEventListener("click", () => {

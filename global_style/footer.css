@@ -109,7 +109,10 @@
 .linking-footer > a > svg:hover .path_link {
   fill: #d1ce0d;
 }
-
+.footer-submit .footer_subtext {
+  color: #3d3e3f;
+  font-weight: 400;
+}
 @media (max-width: 1023px) {
   .footer {
     padding: 60px 100px;

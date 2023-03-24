@@ -136,23 +136,23 @@
   margin-top: 30px;
 }
 
-.news-sub-content {
+.news-sub-content > a {
   display: flex;
   gap: 32px;
   cursor: pointer;
 }
 
-.news-sub-content > a {
+.news-sub-content {
   display: flex;
 }
 
-.infor-news > a {
+.infor-news {
   display: flex;
   flex-direction: column;
   gap: 16px;
   max-height: 172px;
 }
-.infor-news > a > div {
+.infor-news > div {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -191,7 +191,7 @@
 }
 
 .paginator > span {
-  padding: 5px 15px;
+  padding: 5px 12px;
   cursor: pointer;
 }
 
