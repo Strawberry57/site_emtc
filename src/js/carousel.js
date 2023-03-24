@@ -22,6 +22,18 @@ const listImage = [
     text: "hello hello, testing 2",
     src: "../../assets/imgs/preview-2.png",
   },
+  {
+    text: "hello hello, testing3",
+    src: "../../assets/imgs/preview-1.png",
+  },
+  {
+    text: "hello hello, testing 4",
+    src: "../../assets/imgs/preview-2.png",
+  },
+  {
+    text: "hello hello, testing 5",
+    src: "../../assets/imgs/preview-1.png",
+  },
 ];
 
 let count = 0;
@@ -34,12 +46,21 @@ arrowLeft.addEventListener("click", () => {
   if (count < 0) {
     position = 0;
     count = 0;
+    arrowLeft.style.cursor = "default";
   } else {
-    if (count === 0) fill_left.style.fill = "#A5A8AA";
-    fill_right.style.fill = "#2B5AA9";
-    imageShow.src = listImage[count].src;
-    textShow.innerHTML = listImage[count].text;
-    position = count;
+    if (count === 0) {
+      fill_left.style.fill = "#A5A8AA";
+      arrowLeft.style.cursor = "default";
+      selectFnc(count);
+    } else {
+      fill_right.style.fill = "#2B5AA9";
+      arrowLeft.style.cursor = "pointer";
+
+      imageShow.src = listImage[count].src;
+      textShow.innerHTML = listImage[count].text;
+      position = count;
+    }
+    selectFnc(count);
   }
 });
 
@@ -48,13 +69,23 @@ arrowRight.addEventListener("click", () => {
   count = position;
   if (count > listImage.length - 1) {
     position = listImage.length - 1;
+    arrowLeft.style.cursor = "default";
     return;
   } else {
-    if (count === listImage.length - 1) fill_right.style.fill = "#A5A8AA";
+    if (count === listImage.length - 1) {
+      fill_right.style.fill = "#A5A8AA";
+      arrowRight.style.cursor = "default";
+      arrowLeft.style.cursor = "pointer";
+      selectFnc(count);
+    }
     fill_left.style.fill = "#2B5AA9";
+    arrowLeft.style.cursor = "pointer";
     imageShow.src = listImage[count].src;
     textShow.innerHTML = listImage[count].text;
     position = count;
+    if (count < listImage.length - 1) {
+      selectFnc(count);
+    }
   }
 });
 
@@ -72,6 +103,7 @@ function selectFnc(e) {
     textShow.innerHTML = listImage[number].text;
   }
   const back = document.querySelector(".list-background");
+  console.log(e);
   back.innerHTML = `0` + (Number(e) + 1);
 }
 

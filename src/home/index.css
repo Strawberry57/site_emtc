@@ -191,6 +191,11 @@
   cursor: pointer;
 }
 
+.right-carousel,
+.right-carousel-product {
+  cursor: pointer;
+}
+
 .servive-box-img .more-detail > span {
   color: #ffd500;
 }

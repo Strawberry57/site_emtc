@@ -44,6 +44,7 @@
 .news-detail .news-img > img {
   height: 340px;
   width: 584px;
+  width: 100%;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -58,6 +59,7 @@
   transition: initial;
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 .news-detail .news-img:hover > img {
@@ -68,10 +70,14 @@
   position: absolute;
   bottom: 30px;
   left: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .news-detail .news-img .infor > span {
   color: #d9dbdd;
+  margin-bottom: 8px;
 }
 
 .news-detail .news-img .infor > a > p {
@@ -157,6 +163,9 @@
   flex-direction: column;
   gap: 8px;
 }
+.text_news {
+  max-width: 670px;
+}
 
 .date-news {
   letter-spacing: 0.2px;
@@ -191,7 +200,11 @@
 }
 
 .paginator > span {
-  padding: 5px 12px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 

@@ -122,7 +122,11 @@
 }
 
 .paginator > span {
-  padding: 5px 12px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .paginator .selected_pag {
