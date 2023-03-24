@@ -5,7 +5,8 @@ const products_content = document.querySelector(".products-content");
 const searchValue = document.querySelector(".search-input");
 const fill_left = document.querySelector(".fill_left_carousel");
 const fill_right = document.querySelector(".fill_right_carousel");
-console.log(fill_right);
+const overlay = document.querySelector(".overlay");
+console.log(overlay);
 let countPage = 1;
 let maxPage = 4;
 const listProduct = [
@@ -81,8 +82,10 @@ renderProduct();
 expand_btn.addEventListener("click", () => {
   if (expand_options.style.display !== "none") {
     expand_options.style.display = "none";
+    overlay.style.display = "none";
   } else {
     expand_options.style.display = "block";
+    overlay.style.display = "block";
   }
 });
 
@@ -90,10 +93,12 @@ function selectFilterFnc(type) {
   if (type === "AtZ") {
     expand_text.innerHTML = "Alphabetically: A to Z";
     expand_options.style.display = "none";
+    overlay.style.display = "none";
   }
   if (type === "ZtA") {
     expand_text.innerHTML = "Alphabetically: Z to A";
     expand_options.style.display = "none";
+    overlay.style.display = "none";
   }
 }
 
@@ -184,3 +189,8 @@ function nextPage() {
     fill_left.style.fill = "#2B5AA9";
   }
 }
+overlay.addEventListener("click", () => {
+  console.log("abc");
+  expand_options.style.display = "none";
+  overlay.style.display = "none";
+});
