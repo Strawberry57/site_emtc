@@ -114,8 +114,12 @@ arrowRight_product.addEventListener("click", () => {
     if (value > maxValue) {
       value = value + -264;
       fill_left_pro.style.fill = "#2B5AA9";
+      arrowLeft_product.style.cursor = "pointer";
     }
-    if (value === maxValue) fill_right_pro.style.fill = "#A5A8AA";
+    if (value === maxValue) {
+      fill_right_pro.style.fill = "#A5A8AA";
+      arrowRight_product.style.cursor = "default";
+    }
   }
   if (value >= maxValue) {
     product_detail.style.transform = `translateX(${value}px)`;
@@ -128,8 +132,12 @@ arrowLeft_product.addEventListener("click", () => {
     if (value < 0) {
       value = value + 264;
       fill_right_pro.style.fill = "#2B5AA9";
+      arrowRight_product.style.cursor = "pointer";
     }
-    if (value === 0) fill_left_pro.style.fill = "#A5A8AA";
+    if (value === 0) {
+      fill_left_pro.style.fill = "#A5A8AA";
+      arrowLeft_product.style.cursor = "default";
+    }
   }
   if (value <= 0) {
     product_detail.style.transform = `translateX(${value}px)`;
