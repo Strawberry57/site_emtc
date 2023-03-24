@@ -95,6 +95,10 @@
     width: initial;
     gap: 15px;
   }
+  .list-background {
+    top: -125px;
+    left: 150px;
+  }
 }
 
 @media (max-width: 740px) {
