@@ -68,9 +68,9 @@ li {
 }
 
 .btn:hover {
-  background-color: #f4f000;
+  background-color: #ffd500;
   color: #2b65ca;
-  fill: #f4f000;
+  fill: #ffd500;
 }
 
 .btn > svg {
@@ -86,7 +86,7 @@ li {
 }
 
 .btn:hover .rect-btn {
-  fill: #f4f000;
+  fill: #ffd500;
 }
 
 .content-container {
