@@ -259,6 +259,7 @@
   position: absolute;
   bottom: 30px;
   left: 20px;
+  right: 20px;
 }
 
 .news-detail .news-img .infor > span {

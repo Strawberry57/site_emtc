@@ -74,7 +74,7 @@
   cursor: pointer;
 }
 .field > svg:hover {
-  background: #d1ce0d;
+  background: #ffd500;
 }
 .field > svg:hover .rowpath {
   fill: #2b5aa9 !important;
@@ -102,12 +102,12 @@
 }
 
 .linking-footer > a > svg:hover .cricle_svg {
-  stroke: #d1ce0d;
+  stroke: #ffd500;
   cursor: pointer;
 }
 
 .linking-footer > a > svg:hover .path_link {
-  fill: #d1ce0d;
+  fill: #ffd500;
 }
 .footer-submit .footer_subtext {
   color: #3d3e3f;
