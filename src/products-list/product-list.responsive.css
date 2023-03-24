@@ -48,4 +48,19 @@
   .contact {
     padding: 16px 20px;
   }
+  .products-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-product {
+    gap: 16px;
+  }
+  .search-btn > input {
+    min-width: 255px;
+  }
+  .expand-btn {
+    min-width: 345px;
+  }
 }
