@@ -9,7 +9,7 @@
 .wrapper-box {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 80px;
 }
 .product-box-content {
   display: flex;
