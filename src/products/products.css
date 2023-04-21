@@ -9,7 +9,7 @@
 .wrapper-box {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
 }
 .product-box-content {
   display: flex;
@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   color: #212121;
+  margin-bottom: 16px;
 }
 
 .box-content-text .text {
@@ -67,15 +68,17 @@
   gap: 12px;
   height: auto;
   width: 48px;
+  height: 48px;
   bottom: 24px;
-  left: 30%;
-  transform: translateX(-30%);
+  left: 25%;
+  transform: translateX(-25%);
 }
 .select-box-image > img {
   height: 100%;
   width: 100%;
   border: 1px solid #fff;
   cursor: pointer;
+  object-fit: cover;
 }
 .select-box-image .selected {
   border: 1px solid #ffd500;

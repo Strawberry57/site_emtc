@@ -123,7 +123,7 @@ function renderProduct() {
     products_content.innerHTML += `<a href="#">
         <div class="box-goods">
           <img alt="" src='${value.img}' />
-          <div>${value.name}</div>
+          <div style="padding-top: 16px">${value.name}</div>
           <div class="product-content-text">${value.text}</div>
         </div>
       </a>`;

@@ -59,7 +59,7 @@ const listProduct = [
 console.log(wrapperBox);
 function renderProduct() {
   listProduct.map((value, index) => {
-    return (wrapperBox.innerHTML += `<a >
+    return (wrapperBox.innerHTML += `
         <div class="product-box-content ${index % 2 !== 0 && "row-reverse"}">
         <div class="box-content-text">
           <h1>${value.name}</h1>
@@ -77,24 +77,28 @@ function renderProduct() {
               class="${item.isSelect && "selected"}"
               alt=""
               src="${item.src}"
-              onClick="handleClick(${i},${index})"
+              onClick="handleClick(this ,${i},${index})"
             />`
           )}
           </div>
         </div>
       </div>
-          </a>`);
+         `);
   });
 }
 const isFirst = false;
 renderProduct();
-function handleClick(i, index) {
-  const productItem = listProduct[index].data.map((value) => {
+function handleClick(e, i, index) {
+  //   e.style.color = "red";
+  //   e.classList.add("selected");
+  //   console.log(wrapperBox);
+  wrapperBox.innerHTML = ``;
+
+  listProduct[index].data.map((value) => {
     if (value.isSelect === true) value.isSelect = false;
   });
-  console.log(productItem);
-  wrapperBox.innerHTML = ``;
   listProduct[index].data[i].isSelect = true;
   listProduct[index].image = listProduct[index].data[i].src;
   renderProduct();
+  //   console.log(listProduct);
 }
