@@ -1,0 +1,16 @@
+@media (max-width: 1023px) {
+  .products-content {
+    padding: 50px 60px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .products-content {
+    padding: 50px 40px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, minmax(200px, 7fr));
+  }
+}
+
+@media (max-width: 740px) {
+}

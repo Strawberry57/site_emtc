@@ -13,66 +13,82 @@ const listProduct = [
   {
     name: "Bạc hàn",
     img: "../../assets/imgs/bac-han.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bạc thúc",
     img: "../../assets/imgs/bac-thuc.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ Toyota",
     img: "../../assets/imgs/auto_by.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ xe máy",
     img: "../../assets/imgs/bo-dung-cu-xe-may.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bạc hàn",
     img: "../../assets/imgs/bac-han.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bạc thúc",
     img: "../../assets/imgs/bac-thuc.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ Toyota",
     img: "../../assets/imgs/auto_by.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ xe máy",
     img: "../../assets/imgs/bo-dung-cu-xe-may.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bạc hàn",
     img: "../../assets/imgs/bac-han.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bạc thúc",
     img: "../../assets/imgs/bac-thuc.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ Toyota",
     img: "../../assets/imgs/auto_by.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ xe máy",
     img: "../../assets/imgs/bo-dung-cu-xe-may.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bạc hàn",
     img: "../../assets/imgs/bac-han.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bạc thúc",
     img: "../../assets/imgs/bac-thuc.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ Toyota",
     img: "../../assets/imgs/auto_by.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
   {
     name: "Bộ dụng cụ xe máy",
     img: "../../assets/imgs/bo-dung-cu-xe-may.png",
+    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
   },
 ];
 
@@ -108,6 +124,7 @@ function renderProduct() {
         <div class="box-goods">
           <img alt="" src='${value.img}' />
           <div>${value.name}</div>
+          <div class="product-content-text">${value.text}</div>
         </div>
       </a>`;
   });
@@ -123,6 +140,7 @@ function searchFnc() {
         <div class="box-goods">
           <img alt="" src='${value.img}' />
           <div>${value.name}</div>
+          <div> asdds${value.text}</div>
         </div>
       </a>`;
     }
