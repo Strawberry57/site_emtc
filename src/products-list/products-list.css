@@ -21,6 +21,34 @@
   color: #1e1e1f;
   width: 83%;
 }
+.subCate-product {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.box-subCate {
+  display: flex;
+  gap: 12px;
+}
+
+.box-subCate .text-sub {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 15px;
+  background-color: #2b5aa9;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.box-subCate .select-sub-cate {
+  color: #2b5aa9;
+  background-color: #ffd500;
+}
+
+.box-subCate .text-sub:hover {
+  color: #2b5aa9;
+  background-color: #ffd500;
+}
 
 .search-product {
   padding: 48px 0 80px 0;

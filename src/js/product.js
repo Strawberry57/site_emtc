@@ -93,7 +93,7 @@ const listProduct = [
 ];
 
 expand_options.style.display = "none";
-renderProduct();
+// renderProduct();
 
 expand_btn.addEventListener("click", () => {
   if (expand_options.style.display !== "none") {
@@ -118,16 +118,22 @@ function selectFilterFnc(type) {
   }
 }
 
-function renderProduct() {
-  listProduct.forEach((value) => {
-    products_content.innerHTML += `<a href="#">
-        <div class="box-goods">
-          <img alt="" src='${value.img}' />
-          <div style="padding-top: 16px">${value.name}</div>
-          <div class="product-content-text">${value.text}</div>
-        </div>
-      </a>`;
-  });
+// function renderProduct() {
+//   listProduct.forEach((value) => {
+//     products_content.innerHTML += `<a href="#">
+//         <div class="box-goods">
+//           <img alt="" src='${value.img}' />
+//           <div style="padding-top: 16px">${value.name}</div>
+//           <div class="product-content-text">${value.text}</div>
+//         </div>
+//       </a>`;
+//   });
+// }
+
+function selectSub(e) {
+  const textSelect = document.querySelector(".select-sub-cate");
+  textSelect.classList.remove("select-sub-cate");
+  e.classList.add("select-sub-cate");
 }
 
 function searchFnc() {
