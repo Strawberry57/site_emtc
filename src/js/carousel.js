@@ -103,7 +103,7 @@ function checkColorArrowI() {
 }
 
 function selectFnc(e) {
-  count = e;
+  count = Number(e);
   const li_selected = document.getElementById(`${e}`);
   const li_selected_before = document.querySelector(".selected_li");
   if (li_selected.id === li_selected_before.id) {
