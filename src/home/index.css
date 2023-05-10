@@ -139,16 +139,16 @@
   border-left: 5px solid #2b5aa9;
 }
 
-.servive-box-img {
+.servive-box-img .serviceShow {
   position: relative;
 }
 
-.servive-box-img > img {
+.servive-box-img .serviceShow > img {
   margin-top: 50px;
   margin-bottom: 24px;
 }
 
-.servive-box-img .more-detail {
+.servive-box-img .serviceShow .more-detail {
   position: absolute;
   max-width: 305px;
   padding: 16px;
@@ -157,10 +157,16 @@
   left: -70px;
 }
 
-.servive-box-img .more-detail > p {
+.servive-box-img .serviceShow .more-detail > p {
   color: #fff;
   margin-bottom: 20px;
   line-height: 1.5;
+}
+.serviceShow {
+  display: none;
+}
+.show {
+  display: block;
 }
 .list-background {
   position: absolute;
@@ -196,7 +202,7 @@
   cursor: pointer;
 }
 
-.servive-box-img .more-detail > span {
+.servive-box-img .serviceShow .more-detail > span {
   color: #ffd500;
 }
 

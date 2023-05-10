@@ -29,7 +29,7 @@
     text-align: center;
     width: 100%;
   }
-  .servive-box-img .more-detail {
+  .servive-box-img .serviceShow .more-detail {
     bottom: 0;
     left: -0;
   }
@@ -52,7 +52,7 @@
     border: 0;
     font-weight: 600;
   }
-  .servive-box-img {
+  .servive-box-img .serviceShow {
     text-align: center;
   }
   .product-header {
@@ -166,16 +166,16 @@
     padding: 40px 16px;
     flex-direction: column;
   }
-  .servive-box-img > img {
+  .servive-box-img .serviceShow > img {
     width: 100%;
     margin-top: 0;
   }
-  .servive-box-img .more-detail {
+  .servive-box-img .serviceShow .more-detail {
     bottom: 10px;
     left: 18px;
     max-width: 200px;
   }
-  .servive-box-img .more-detail > p {
+  .servive-box-img .serviceShow .more-detail > p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
