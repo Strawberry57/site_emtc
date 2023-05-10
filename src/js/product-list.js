@@ -56,49 +56,11 @@ const listProduct = [
     ],
   },
 ];
-console.log(wrapperBox);
-function renderProduct() {
-  listProduct.map((value, index) => {
-    return (wrapperBox.innerHTML += `
-        <div class="product-box-content ${index % 2 !== 0 && "row-reverse"}">
-        <div class="box-content-text">
-          <h1>${value.name}</h1>
-          <div class="text">
-            ${value.text}
-          </div>
-          <div class="btn-read"><a href="../products-list/products-list.html">READ MORE</a></div>
-        </div>
-        <div class="box-content-image">
-          <img alt="" src="${value.image}" />
-          <div class="select-box-image">
-          ${value.data.map(
-            (item, i) =>
-              `<img
-              class="${item.isSelect && "selected"}"
-              alt=""
-              src="${item.src}"
-              onClick="handleClick(this ,${i},${index})"
-            />`
-          )}
-          </div>
-        </div>
-      </div>
-         `);
-  });
-}
-const isFirst = false;
-renderProduct();
-function handleClick(e, i, index) {
-  //   e.style.color = "red";
-  //   e.classList.add("selected");
-  //   console.log(wrapperBox);
-  wrapperBox.innerHTML = ``;
-
-  listProduct[index].data.map((value) => {
-    if (value.isSelect === true) value.isSelect = false;
-  });
-  listProduct[index].data[i].isSelect = true;
-  listProduct[index].image = listProduct[index].data[i].src;
-  renderProduct();
-  //   console.log(listProduct);
+function clickSubImg(e, id) {
+  const boxItem = document.getElementById(`box-${id}`);
+  const selected = boxItem.querySelector(".selected");
+  selected.classList.remove("selected");
+  const idElement = document.getElementById(`main-${id}`);
+  e.classList.add("selected");
+  idElement.src = e.src;
 }

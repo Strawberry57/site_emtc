@@ -67,11 +67,12 @@
   display: flex;
   gap: 12px;
   height: auto;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   bottom: 24px;
-  left: 25%;
-  transform: translateX(-25%);
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
 }
 .select-box-image > img {
   height: 100%;
