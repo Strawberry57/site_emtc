@@ -113,23 +113,35 @@
       <div class="container">
         <div class="subCate-product content-container">
           <div class="box-subCate">
-            <div onclick="selectSub(this)" class="text-sub select-sub-cate">
+            <div
+              onclick="selectSub(this, 'all')"
+              class="text-sub select-sub-cate"
+            >
               All
             </div>
-            <div onclick="selectSub(this)" class="text-sub">Xe máy</div>
-            <div onclick="selectSub(this)" class="text-sub">ô tô</div>
+            <div onclick="selectSub(this, 'motor')" class="text-sub">
+              Xe máy
+            </div>
+            <div onclick="selectSub(this,'car')" class="text-sub">ô tô</div>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="search-product content-container">
           <div class="search-btn">
-            <input class="search-input" type="text" placeholder="Search..." />
-            <img
-              onclick="searchFnc()"
-              src="../../assets/svgs/search.svg"
-              alt=""
+            <input
+              onchange="ChangeText(this.value)"
+              class="search-input"
+              type="text"
+              placeholder="Search..."
             />
+            <a>
+              <img
+                onclick="searchFnc()"
+                src="../../assets/svgs/search.svg"
+                alt=""
+              />
+            </a>
           </div>
           <div class="expand-box">
             <div class="expand-btn">
@@ -144,7 +156,134 @@
         </div>
       </div>
       <div class="container">
-        <div class="products-content content-container">
+        <div
+          id="all"
+          class="products-content content-container non-select select-all"
+        >
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-han.png" />
+              <div style="padding-top: 16px">Bạc hàn</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-thuc.png" />
+              <div style="padding-top: 16px">Bạc thúc</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/auto_by.png" />
+              <div style="padding-top: 16px">Bộ dụng cụ Toyota</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bo-dung-cu-xe-may.png" />
+              <div style="padding-top: 16px">Bộ dụng cụ xe máy</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="motor" class="products-content content-container non-select">
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-han.png" />
+              <div style="padding-top: 16px">Bạc hàn</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-han.png" />
+              <div style="padding-top: 16px">Bạc hàn</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-han.png" />
+              <div style="padding-top: 16px">Bạc hàn</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-han.png" />
+              <div style="padding-top: 16px">Bạc hàn</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-thuc.png" />
+              <div style="padding-top: 16px">Bạc thúc</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/auto_by.png" />
+              <div style="padding-top: 16px">Bộ dụng cụ Toyota</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bo-dung-cu-xe-may.png" />
+              <div style="padding-top: 16px">Bộ dụng cụ xe máy</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
+        </div>
+        <div id="car" class="products-content content-container non-select">
+          <a href="#">
+            <div class="box-goods">
+              <img alt="" src="../../assets/imgs/bac-han.png" />
+              <div style="padding-top: 16px">Bạc hàn</div>
+              <div class="product-content-text">
+                Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus
+                viverra laoreet
+              </div>
+            </div>
+          </a>
           <a href="#">
             <div class="box-goods">
               <img alt="" src="../../assets/imgs/bac-han.png" />

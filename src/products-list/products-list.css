@@ -123,6 +123,13 @@
   grid-gap: 2rem;
   justify-items: center;
 }
+.non-select {
+  display: none;
+}
+
+.select-all {
+  display: grid;
+}
 .product-content-text {
   font-weight: 400;
   font-size: 14px;

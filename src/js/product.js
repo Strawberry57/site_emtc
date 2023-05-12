@@ -6,7 +6,6 @@ const searchValue = document.querySelector(".search-input");
 const fill_left = document.querySelector(".fill_left_carousel");
 const fill_right = document.querySelector(".fill_right_carousel");
 const overlay = document.querySelector(".overlay");
-console.log(overlay);
 let countPage = 1;
 let maxPage = 4;
 const listProduct = [
@@ -94,7 +93,7 @@ const listProduct = [
 
 expand_options.style.display = "none";
 // renderProduct();
-
+let text = "";
 expand_btn.addEventListener("click", () => {
   if (expand_options.style.display !== "none") {
     expand_options.style.display = "none";
@@ -110,11 +109,13 @@ function selectFilterFnc(type) {
     expand_text.innerHTML = "Alphabetically: A to Z";
     expand_options.style.display = "none";
     overlay.style.display = "none";
+    window.location.href = `products-list.html?value=AtZ`;
   }
   if (type === "ZtA") {
     expand_text.innerHTML = "Alphabetically: Z to A";
     expand_options.style.display = "none";
     overlay.style.display = "none";
+    window.location.href = `products-list.html?value=ZtA`;
   }
 }
 
@@ -129,29 +130,50 @@ function selectFilterFnc(type) {
 //       </a>`;
 //   });
 // }
-
-function selectSub(e) {
-  const textSelect = document.querySelector(".select-sub-cate");
-  textSelect.classList.remove("select-sub-cate");
-  e.classList.add("select-sub-cate");
+render();
+function render() {
+  urlParams = new URLSearchParams(window.location.search);
+  const url = urlParams.get("value");
+  if (url === "ZtA") {
+    expand_text.innerHTML = "Alphabetically: Z to A";
+    expand_options.style.display = "none";
+    overlay.style.display = "none";
+  }
+}
+function ChangeText(e) {
+  text = e;
 }
 
 function searchFnc() {
-  products_content.innerHTML = "";
-  console.log(searchValue.value);
-  const valueS = searchValue.value;
-  listProduct.forEach((value) => {
-    if (value.name.toUpperCase().indexOf(valueS.toUpperCase()) > -1) {
-      products_content.innerHTML += `<a href="#">
-        <div class="box-goods">
-          <img alt="" src='${value.img}' />
-          <div>${value.name}</div>
-          <div> asdds${value.text}</div>
-        </div>
-      </a>`;
-    }
-  });
+  window.location.href = `products-list.html?value=${text}`;
 }
+
+function selectSub(e, type) {
+  const textSelect = document.querySelector(".select-sub-cate");
+  textSelect.classList.remove("select-sub-cate");
+  e.classList.add("select-sub-cate");
+  const eRemoveClass = document.querySelector(".select-all");
+  eRemoveClass.classList.remove("select-all");
+  const idType = document.querySelector(`#${type}`);
+  idType.classList.add("select-all");
+}
+
+// function searchFnc() {
+//   products_content.innerHTML = "";
+//   console.log(searchValue.value);
+//   const valueS = searchValue.value;
+//   listProduct.forEach((value) => {
+//     if (value.name.toUpperCase().indexOf(valueS.toUpperCase()) > -1) {
+//       products_content.innerHTML += `<a href="#">
+//         <div class="box-goods">
+//           <img alt="" src='${value.img}' />
+//           <div>${value.name}</div>
+//           <div> asdds${value.text}</div>
+//         </div>
+//       </a>`;
+//     }
+//   });
+// }
 
 function changePaginator(numberPage) {
   const numberPages = document.getElementById(`${numberPage}`);
@@ -214,7 +236,6 @@ function nextPage() {
   }
 }
 overlay.addEventListener("click", () => {
-  console.log("abc");
   expand_options.style.display = "none";
   overlay.style.display = "none";
 });
