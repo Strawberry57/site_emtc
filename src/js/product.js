@@ -105,17 +105,35 @@ expand_btn.addEventListener("click", () => {
 });
 
 function selectFilterFnc(type) {
+  const url = urlParams.get("value");
+  const urlPage = urlParams.get("page");
   if (type === "AtZ") {
     expand_text.innerHTML = "Alphabetically: A to Z";
     expand_options.style.display = "none";
     overlay.style.display = "none";
-    window.location.href = `products-list.html?value=AtZ`;
+    if (url && !urlPage) {
+      window.location.href = `products-list.html?value=${url}&sort=AtZ`;
+    } else if (!url && urlPage) {
+      window.location.href = `products-list.html?sort=AtZ&page=${urlPage}`;
+    } else if (url && urlPage) {
+      window.location.href = `products-list.html?value=${url}&sort=AtZ&page=${urlPage}`;
+    } else {
+      window.location.href = `products-list.html?sort=AtZ`;
+    }
   }
   if (type === "ZtA") {
     expand_text.innerHTML = "Alphabetically: Z to A";
     expand_options.style.display = "none";
     overlay.style.display = "none";
-    window.location.href = `products-list.html?value=ZtA`;
+    if (url && !urlPage) {
+      window.location.href = `products-list.html?value=${url}&sort=ZtA`;
+    } else if (!url && urlPage) {
+      window.location.href = `products-list.html?sort=ZtA&page=${urlPage}`;
+    } else if (url && urlPage) {
+      window.location.href = `products-list.html?value=${url}&sort=ZtA&page=${urlPage}`;
+    } else {
+      window.location.href = `products-list.html?sort=ZtA`;
+    }
   }
 }
 
@@ -133,11 +151,33 @@ function selectFilterFnc(type) {
 render();
 function render() {
   urlParams = new URLSearchParams(window.location.search);
-  const url = urlParams.get("value");
-  if (url === "ZtA") {
+  const urlsort = urlParams.get("sort");
+  if (urlsort === "ZtA") {
     expand_text.innerHTML = "Alphabetically: Z to A";
     expand_options.style.display = "none";
     overlay.style.display = "none";
+  }
+  const urlValue = urlParams.get("value");
+  if (urlValue) {
+    searchValue.value = urlValue;
+    text = urlValue;
+  }
+  const urlPage = urlParams.get("page");
+  if (urlPage) {
+    const numberPages = document.getElementById(`${urlPage}`);
+    const numberPagesOld = document.querySelector(".selected_pag");
+    countPage = urlPage;
+    if (Number(numberPagesOld.id) === urlPage) {
+      return;
+    } else {
+      numberPagesOld.classList.remove("selected_pag");
+      numberPages.classList.add("selected_pag");
+      fill_left.style.fill = "#2B5AA9";
+      fill_right.style.fill = "#2B5AA9";
+    }
+
+    if (urlPage === 1) fill_left.style.fill = "#A5A8AA";
+    if (urlPage === maxPage) fill_right.style.fill = "#A5A8AA";
   }
 }
 function ChangeText(e) {
@@ -145,7 +185,12 @@ function ChangeText(e) {
 }
 
 function searchFnc() {
-  window.location.href = `products-list.html?value=${text}`;
+  const urlsort = urlParams.get("sort");
+  if (urlsort) {
+    window.location.href = `products-list.html?value=${text}&sort=${urlsort}`;
+  } else {
+    window.location.href = `products-list.html?value=${text}`;
+  }
 }
 
 function selectSub(e, type) {
@@ -157,23 +202,6 @@ function selectSub(e, type) {
   const idType = document.querySelector(`#${type}`);
   idType.classList.add("select-all");
 }
-
-// function searchFnc() {
-//   products_content.innerHTML = "";
-//   console.log(searchValue.value);
-//   const valueS = searchValue.value;
-//   listProduct.forEach((value) => {
-//     if (value.name.toUpperCase().indexOf(valueS.toUpperCase()) > -1) {
-//       products_content.innerHTML += `<a href="#">
-//         <div class="box-goods">
-//           <img alt="" src='${value.img}' />
-//           <div>${value.name}</div>
-//           <div> asdds${value.text}</div>
-//         </div>
-//       </a>`;
-//     }
-//   });
-// }
 
 function changePaginator(numberPage) {
   const numberPages = document.getElementById(`${numberPage}`);
@@ -190,6 +218,17 @@ function changePaginator(numberPage) {
 
   if (numberPage === 1) fill_left.style.fill = "#A5A8AA";
   if (numberPage === maxPage) fill_right.style.fill = "#A5A8AA";
+  const urlValue = urlParams.get("value");
+  const urlSort = urlParams.get("sort");
+  if (urlValue && !urlSort) {
+    window.location.href = `products-list.html?value=${urlValue}&page=${numberPage}`;
+  } else if (!urlValue && urlSort) {
+    window.location.href = `products-list.html?sort=${urlSort}&page=${numberPage}`;
+  } else if (urlValue && urlSort) {
+    window.location.href = `products-list.html?value=${urlValue}&sort=${urlSort}&page=${numberPage}`;
+  } else {
+    window.location.href = `products-list.html?page=${numberPage}`;
+  }
 }
 
 function backPage() {

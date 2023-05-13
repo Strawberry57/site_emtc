@@ -49,10 +49,16 @@
 }
 
 .partners-box {
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+}
+.not-select-partner {
+  display: none;
+}
+.select-partner {
+  display: grid;
 }
 
 .partner {
