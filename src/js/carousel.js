@@ -163,3 +163,12 @@ arrowLeft_product.addEventListener("click", () => {
     product_detail.style.transform = `translateX(${value}px)`;
   }
 });
+
+function playVideo() {
+  const videoElement = document.querySelector(".video-home-page");
+  if (videoElement.paused) {
+    videoElement.play();
+  } else {
+    videoElement.pause();
+  }
+}

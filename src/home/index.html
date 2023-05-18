@@ -45,7 +45,7 @@
       <div class="container container-hero-box">
         <div class="hero-box content-container">
           <div class="hero-box-detail">
-            <h3>Manufacturing Dealings, Distributing Quality</h3>
+            <h3 style="font-size: 56px">Manufacturing Dealings, Distributing Quality</h3>
             <p>
               To be competitive, we have to look for every opportunity to
               improve efficiencies and productivity while increasing quality.
@@ -81,7 +81,7 @@
       <div class="container">
         <div class="about-box content-container">
           <div class="about-box-detail">
-            <h3>
+            <h3 style="font-size: 36px;">
               Export Mechanical Tool <br />
               Join Stock Company (EMTC)
             </h3>
@@ -119,32 +119,35 @@
           </div>
         </div>
       </div>
-     <div class="container container-hero-box">
+     <div class="container container-hero-box video-container">
+      <video autoplay loop class="video-home-page" src="../../assets/imgs/introMp4.mp4"></video>
         <div class="video-box content-container">
           <div class="video-box-detail">
-            <h3>
-              Product Quality Is The Condition And The Decisive Factor Which
-              Ensure The Comapany's Existence
+            <h3 style="line-height: 38px;">
+              Product Quality Is The Condition And <br/> The Decisive Factor Which
+              Ensure <br/> The Comapany's Existence
             </h3>
-            <svg
-              class="btn btn-video"
-              width="72"
-              height="72"
-              viewBox="0 0 72 72"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect class="rect-btn" width="72" height="72" fill="#2B5AA9" />
-              <path
-                class="round-btn"
-                d="M36 56C47.0457 56 56 47.0457 56 36C56 24.9543 47.0457 16 36 16C24.9543 16 16 24.9543 16 36C16 47.0457 24.9543 56 36 56Z"
-                stroke="#FDFDFD"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path class="btn-fill" d="M32 28L44 36L32 44V28Z" fill="#FDFDFD" />
-            </svg>
+            <button onclick="playVideo()" class="btn-video-homepage">
+              <svg
+                class="btn btn-video"
+                width="72"
+                height="72"
+                viewBox="0 0 72 72"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect class="rect-btn" width="72" height="72" fill="#2B5AA9" />
+                <path
+                  class="round-btn"
+                  d="M36 56C47.0457 56 56 47.0457 56 36C56 24.9543 47.0457 16 36 16C24.9543 16 16 24.9543 16 36C16 47.0457 24.9543 56 36 56Z"
+                  stroke="#FDFDFD"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path class="btn-fill" d="M32 28L44 36L32 44V28Z" fill="#FDFDFD" />
+              </svg>
+            </button>
           </div>
         </div>
      </div>
@@ -388,7 +391,7 @@
               class="message textmessage"
             ></textarea>
             <div>
-              <span class="btn"
+              <button class="btn"
                 >SUBMIT
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -410,7 +413,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-              </span>
+              </button>
             </div>
           </div>
         </div>
@@ -438,10 +441,12 @@
         <div class="footer content-container">
           <div class="footer-infor">
             <div class="footer-logo footer-child">
-              <img alt="" src="../../assets/imgs/logo-footer.png" />
-              <div class="footer_subtext">
-                Export Mechanical Tool Join Stock Company (EMTC)
-              </div>
+              <a href="./index.html"><img alt="" src="../../assets/imgs/logo-footer.png" /></a>
+             <a href="./index.html">
+                <div class="footer_subtext">
+                  Export Mechanical Tool Join Stock Company (EMTC)
+                </div>
+             </a>
             </div>
             <div class="footer-quick-link footer-child">
               <h4>Quick Link</h4>
@@ -466,16 +471,18 @@
                   type="text"
                   placeholder="Email address"
                 />
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1960_3603)">
-                  <path class="rowpath" d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z" fill="#FDFDFD"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_1960_3603">
-                  <rect width="24" height="24" fill="white"/>
-                  </clipPath>
-                  </defs>
-                  </svg>
+               <button class="btn-footer">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1960_3603)">
+                    <path class="rowpath" d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z" fill="#FDFDFD"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_1960_3603">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+               </button>
               </div>
               <p class="footer_subtext" style="width: 85%">
                 Subcribe to our newsletter to receive our products announcements.

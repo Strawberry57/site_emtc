@@ -12,6 +12,9 @@
   background-image: linear-gradient(rgb(16 18 27 / 54%), rgb(20 28 33 / 0%)),
     url("../../assets/imgs/hero-background.png");
 }
+.container-hero-box.video-container {
+  background-image: linear-gradient(rgb(16 18 27 / 54%), rgb(20 28 33 / 0%));
+}
 
 .container > img {
   filter: brightness(50%);
@@ -74,6 +77,17 @@
   padding: 80px 0;
 }
 
+.video-home-page {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform: scale(1);
+}
+
 .video-box > img {
   height: 100%;
   width: 100%;
@@ -101,10 +115,15 @@
   text-align: center;
   display: flex;
   width: 692px;
+  justify-content: center;
 }
 
 .video-box-detail > svg {
   cursor: pointer;
+}
+.btn-video-homepage {
+  border: 0;
+  display: flex;
 }
 
 .service-box {
@@ -120,7 +139,6 @@
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
-  margin-left: 24px;
 }
 .service-box-detail > ul {
   list-style: none;
@@ -130,13 +148,21 @@
 }
 
 .service-box-detail > ul > li {
-  padding: 2px 24px;
+  padding: 2px 24px 2px 0;
   margin-bottom: 16px;
 }
-
 .service-box-detail .selected_li {
+  position: relative;
   color: #2b5aa9;
-  border-left: 5px solid #2b5aa9;
+  font-weight: 900;
+}
+.service-box-detail .selected_li::before {
+  position: absolute;
+  height: 25px;
+  width: 5px;
+  content: "";
+  background-color: #2b5aa9;
+  left: -24px;
 }
 
 .servive-box-img .serviceShow {
@@ -180,7 +206,7 @@
   justify-content: center;
   text-align: center;
   color: rgb(59 136 165 / 12%);
-  left: 25px;
+  left: 0;
 }
 
 .image-show {
@@ -426,6 +452,17 @@
 }
 .infor-contact > input {
   font-family: "Poppins", sans-serif !important;
+  border: 0;
+  outline: 0;
+}
+.infor-contact > input:focus {
+  border: 0;
+  outline: 0;
+}
+
+.infor-contact > input:focus-visible {
+  border: 0;
+  outline: 0;
 }
 
 .message {
@@ -438,6 +475,17 @@
   min-height: 100px;
   font-family: "Poppins", sans-serif !important;
   resize: none;
+  border: 0;
+  outline: 0;
+}
+.textmessage:focus-visible {
+  border: 0;
+  outline: 0;
+}
+
+.textmessage:focus {
+  border: 0;
+  outline: 0;
 }
 .textmessage::-webkit-scrollbar {
   display: none;

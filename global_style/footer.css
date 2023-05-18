@@ -63,7 +63,11 @@
   border-radius: 0px 6px 6px 0px;
   padding: 10px;
 }
-.field > svg {
+.field .btn-footer {
+  border: 0;
+  display: flex;
+}
+.field .btn-footer > svg {
   background: #2b5aa9;
   border-radius: 0px 6px 6px 0px;
   /* padding: 10px; */
@@ -73,10 +77,10 @@
   padding: 2px 10px;
   cursor: pointer;
 }
-.field > svg:hover {
+.field .btn-footer > svg:hover {
   background: #ffd500;
 }
-.field > svg:hover .rowpath {
+.field .btn-footer > svg:hover .rowpath {
   fill: #2b5aa9 !important;
 }
 
@@ -109,8 +113,8 @@
 .linking-footer > a > svg:hover .path_link {
   fill: #ffd500;
 }
-.footer-submit .footer_subtext {
-  color: #3d3e3f;
+.footer_subtext {
+  color: #2b5aa9;
   font-weight: 400;
 }
 @media (max-width: 1023px) {

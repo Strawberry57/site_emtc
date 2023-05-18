@@ -61,6 +61,8 @@ li {
   color: #fff;
   background-color: #2b5aa9;
   cursor: pointer;
+  font-family: "svn-regular";
+  border: 0;
 }
 
 .btn-video {

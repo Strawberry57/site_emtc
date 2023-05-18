@@ -62,6 +62,25 @@
   border: 1px solid #d9dbdd;
   font-family: "Poppins", sans-serif !important;
 }
+
+.top-input > input:focus {
+  outline: 0;
+  border: 1px solid #d9dbdd;
+}
+
+.top-input > input:focus-visible {
+  outline: 0;
+  border: 1px solid #d9dbdd;
+}
+.mid-input > textarea:focus {
+  outline: 0;
+  border: 1px solid #d9dbdd;
+}
+.mid-input > textarea:focus-visible {
+  outline: 0;
+  border: 1px solid #d9dbdd;
+}
+
 .mid-input > textarea {
   width: 100%;
   min-height: 96px;
