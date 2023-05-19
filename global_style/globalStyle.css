@@ -3,36 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-@font-face {
-  src: url("../assets/font/SVN-GilroyBold.otf") format("opentype");
-
-  font-family: "svn-bold";
-}
-@font-face {
-  src: url("../assets/font/SVN-GilroyMedium.otf") format("opentype");
-
-  font-family: "svn-medium";
-}
-@font-face {
-  src: url("../assets/font/SVN-GilroyRegular.otf") format("opentype");
-
-  font-family: "svn-regular";
-}
-@font-face {
-  src: url("../assets/font/SVN-GilroySemiBold.otf") format("opentype");
-
-  font-family: "svn-semibold";
-}
 
 html {
-  font-family: "svn-regular", sans-serif !important;
+  font-family: "SVN-Gilroy", sans-serif !important;
   scroll-behavior: smooth;
   font-weight: 400;
 }
 h3 {
   font-size: 36px;
   font-weight: 700;
-  font-family: "svn-semibold", sans-serif !important;
+  font-family: "SVN-Gilroy", sans-serif !important;
 }
 a {
   color: #000;
@@ -61,7 +41,7 @@ li {
   color: #fff;
   background-color: #2b5aa9;
   cursor: pointer;
-  font-family: "svn-regular";
+  font-family: "SVN-Gilroy";
   border: 0;
 }
 

@@ -177,6 +177,7 @@ function submitTouch() {
   const nameInput = document.querySelector(".nameInput");
   const emailInput = document.querySelector(".emailInput");
   const messageInput = document.querySelector(".messageInput");
+  console.log(nameInput.value);
   $.ajax({
     url: "/umbraco/surface/GetInTouchSurface/ContactForm",
     method: "GET",

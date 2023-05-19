@@ -74,7 +74,8 @@
 .video-box {
   position: relative;
   height: 440px;
-  padding: 80px 0;
+  /* padding: 80px 0; */
+  display: flex;
 }
 
 .video-home-page {
@@ -192,7 +193,8 @@
   display: none;
 }
 .show {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
 }
 .list-background {
   position: absolute;
