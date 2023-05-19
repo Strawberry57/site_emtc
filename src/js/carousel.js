@@ -172,3 +172,21 @@ function playVideo() {
     videoElement.pause();
   }
 }
+
+function submitTouch() {
+  const nameInput = document.querySelector(".nameInput");
+  const emailInput = document.querySelector(".emailInput");
+  const messageInput = document.querySelector(".messageInput");
+  $.ajax({
+    url: "/umbraco/surface/GetInTouchSurface/ContactForm",
+    method: "GET",
+    data: {
+      Email: nameInput.value,
+      Name: emailInput.value,
+      Message: messageInput.value,
+    },
+    success: function (data) {
+      console.log(data);
+    },
+  });
+}
