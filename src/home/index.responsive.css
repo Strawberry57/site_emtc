@@ -103,6 +103,9 @@
     top: -125px;
     left: 150px;
   }
+  .valid-email {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 740px) {
@@ -247,5 +250,8 @@
     flex-wrap: wrap;
     gap: 13px;
     justify-content: center;
+  }
+  .valid-email {
+    font-size: 10px;
   }
 }

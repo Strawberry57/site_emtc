@@ -177,7 +177,6 @@ function submitTouch() {
   const nameInput = document.querySelector(".nameInput");
   const emailInput = document.querySelector(".emailInput");
   const messageInput = document.querySelector(".messageInput");
-  console.log(nameInput.value);
   $.ajax({
     url: "/umbraco/surface/GetInTouchSurface/ContactForm",
     method: "GET",
@@ -190,4 +189,14 @@ function submitTouch() {
       console.log(data);
     },
   });
+}
+
+function handchangeValue(e) {
+  const validemail = document.querySelector(".valid-email");
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e)) {
+    validemail.style.display = "none";
+    return true;
+  }
+  validemail.style.display = "block";
+  return false;
 }
