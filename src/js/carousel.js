@@ -173,7 +173,8 @@ function playVideo() {
   }
 }
 
-function submitTouch() {
+function submitTouch(e) {
+  e.preventDefault();
   const nameInput = document.querySelector(".nameInput");
   const emailInput = document.querySelector(".emailInput");
   const messageInput = document.querySelector(".messageInput");
