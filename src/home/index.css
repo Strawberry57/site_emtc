@@ -396,7 +396,9 @@
   gap: 16px;
   font-weight: 600;
 }
-
+.box-product > div {
+  height: 24px;
+}
 .box-product > img {
   height: 200px;
   width: 200px;

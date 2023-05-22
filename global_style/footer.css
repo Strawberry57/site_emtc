@@ -1,5 +1,5 @@
 .footer {
-  padding: 120px 0;
+  padding: 60px 0;
   background: #eaeff7;
   padding-bottom: 0;
 }
@@ -114,9 +114,13 @@
   fill: #ffd500;
 }
 .footer_subtext {
+  color: initial;
+}
+.footer-logo .footer_subtext {
   color: #2b5aa9;
   font-weight: 400;
 }
+
 @media (max-width: 1023px) {
   .footer {
     padding: 60px 100px;
