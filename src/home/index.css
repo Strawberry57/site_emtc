@@ -152,12 +152,12 @@
   padding: 2px 24px 2px 0;
   margin-bottom: 16px;
 }
-.service-box-detail .selected_li {
+.service-box-detail .selected_li > a {
   position: relative;
   color: #2b5aa9;
   font-weight: 900;
 }
-.service-box-detail .selected_li::before {
+.service-box-detail .selected_li > a::before {
   position: absolute;
   height: 25px;
   width: 5px;
@@ -219,7 +219,7 @@
   width: 100%;
 }
 
-.more-detail > span:hover {
+.more-detail > span > a:hover {
   padding-bottom: 2px;
   border-bottom: 2px solid #ffd500;
   cursor: pointer;

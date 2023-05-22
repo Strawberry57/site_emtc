@@ -48,7 +48,15 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .service-box-detail .selected_li {
+  .service-box-detail .selected_li > a::before {
+    position: absolute;
+    height: 0;
+    width: 0;
+    content: "";
+    background-color: #2b5aa9;
+    left: -24px;
+  }
+  .service-box-detail .selected_li > a {
     border: 0;
     font-weight: 600;
   }
