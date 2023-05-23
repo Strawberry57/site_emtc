@@ -448,6 +448,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
 }
 
 .infor-contact {
@@ -455,21 +456,41 @@
   gap: 24px;
   position: relative;
 }
-.infor-contact > input {
+.infor-contact .infor-input {
+  flex: 1;
+  position: relative;
+}
+.infor-contact .infor-input > input {
   font-family: "Poppins", sans-serif !important;
   border: 0;
   outline: 0;
 }
-.infor-contact > input:focus {
+.infor-contact .infor-input > input:focus {
   border: 0;
   outline: 0;
 }
 
-.infor-contact > input:focus-visible {
+.infor-contact .infor-input > input:focus-visible {
   border: 0;
   outline: 0;
 }
-
+.errorText {
+  background: white;
+  padding: 2px 10px;
+  border-radius: 8px 8px 8px 0px;
+  position: absolute;
+  top: -22px;
+  font-size: 12px;
+  left: 10px;
+  display: none;
+}
+.errorText.textArea {
+  bottom: -20px;
+  right: 20%;
+  top: initial;
+  left: initial;
+  border-radius: 0px 8px 8px 8px;
+}
 .message {
   padding: 12px;
   color: #7f8183;
@@ -482,7 +503,7 @@
   position: absolute;
   bottom: 0px;
   right: 5px;
-  /* background: #9da9b49e; */
+  /* backround: #9da9b49e; */
   font-weight: 700;
 }
 
@@ -492,6 +513,10 @@
   resize: none;
   border: 0;
   outline: 0;
+  position: relative;
+}
+.area-infor {
+  position: relative;
 }
 .textmessage:focus-visible {
   border: 0;

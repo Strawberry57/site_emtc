@@ -17,6 +17,7 @@
     />
     <link href="https://fonts.cdnfonts.com/css/svn-gilroy?styles=55332,55331" rel="stylesheet">
     <link rel="icon" href="../../assets/imgs/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <title>Home - EMTC</title>
   </head>
   <body>
@@ -373,53 +374,64 @@
               nibh ut facilisi.
             </p>
           </div>
-          <div class="contact-input">
-            <div class="infor-contact">
-              <input
-                placeholder="Your name"
-                class="message nameInput"
-                name="name"
-                type="text"
-              />
-              <input
-                onkeydown = "handchangeValue(this.value)"
-                placeholder="Your email"
-                class="message emailInput"
-                name="email"
-                type="text"
-              />
-              <div class="valid-email">Not invalid email address!</div>
+            <div class="contact-input">
+              <div class="infor-contact">
+                <div class="infor-input">
+                  <input
+                    placeholder="Your name"
+                    class="message nameInput"
+                    name="name"
+                    type="text"
+                    required
+                  />
+                  <div class="errorText errorTextname">Please fill out this fields</div>
+                </div>
+             <div class="infor-input">
+                  <input
+                    onkeydown = "handchangeValue(this.value)"
+                    placeholder="Your email"
+                    class="message emailInput"
+                    name="email"
+                    type="text"
+                    required
+                  />
+                  <div class="errorText errorTextemail">Please fill out this fields</div>
+             </div>
+                <div class="valid-email">Not invalid email address!</div>
+              </div>
+             <div class="area-infor">
+                <textarea
+                  placeholder="Enter your message here"
+                  class="message textmessage messageInput"
+                ></textarea>
+                <div class="errorText textArea">Please fill out this fields</div>
+             </div>
+              <div>
+                <button type="submit" onclick="submitTouch(event)" class="btn"
+                  >SUBMIT
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1929_3176)">
+                      <path
+                        class="btn-fill"
+                        d="M9 5V7H15.59L4 18.59L5.41 20L17 8.41V15H19V5H9Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1929_3176">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <textarea
-              placeholder="Enter your message here"
-              class="message textmessage messageInput"
-            ></textarea>
-            <div>
-              <button onclick="submitTouch(event)" class="btn"
-                >SUBMIT
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <g clip-path="url(#clip0_1929_3176)">
-                    <path
-                      class="btn-fill"
-                      d="M9 5V7H15.59L4 18.59L5.41 20L17 8.41V15H19V5H9Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1929_3176">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
     </div>
     <!-- <div class="container">
@@ -509,5 +521,6 @@
     </div>
     <script src="../js/carousel.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   </body>
 </html>

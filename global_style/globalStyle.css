@@ -31,6 +31,10 @@ ul {
 li {
   cursor: pointer;
 }
+img {
+  height: 100%;
+  width: 100%;
+}
 
 .btn {
   display: inline-flex;
@@ -77,6 +81,9 @@ li {
 }
 .container {
   position: relative;
+}
+.alert-header {
+  display: none !important;
 }
 @media (max-width: 740px) {
   html {

@@ -168,6 +168,9 @@
     display: flex;
     text-align: center;
   }
+  .footer-child .footer_subtext {
+    width: 100% !important;
+  }
   .footer_subtext {
     justify-content: center;
   }
