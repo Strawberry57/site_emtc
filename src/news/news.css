@@ -147,6 +147,11 @@
   gap: 32px;
   cursor: pointer;
 }
+.news-sub-content > a > img {
+  height: 160px;
+  width: 232px;
+  object-fit: cover;
+}
 
 .news-sub-content {
   display: flex;

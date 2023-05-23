@@ -199,7 +199,7 @@ function submitTouch(e) {
   } else {
     textArea.style.display = "none";
   }
-  const isValid = handchangeValue();
+  const isValid = handchangeValue(emailInput.value);
   if (!isValid) {
     return;
   }

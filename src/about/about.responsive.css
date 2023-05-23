@@ -39,6 +39,11 @@
   }
   .achivement-about {
     overflow-x: auto;
+    gap: 10px;
+  }
+  .achivement-box > img {
+    width: auto;
+    height: auto;
   }
   .achivement-about::-webkit-scrollbar {
     display: none;

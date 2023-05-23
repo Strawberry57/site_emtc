@@ -23,6 +23,10 @@
   justify-content: center;
   width: 100%;
 }
+.contact-infor .contact-box > img {
+  height: initial;
+  width: initial;
+}
 
 .contact-infor .contact-box .text {
   letter-spacing: 0.2px;
@@ -52,10 +56,15 @@
 
 .top-input {
   display: flex;
+  position: relative;
   gap: 24px;
 }
+.top-input .input-contact {
+  flex: 1;
+  position: relative;
+}
 
-.top-input > input {
+.top-input .input-contact > input {
   width: 100%;
   min-height: 48px;
   padding: 12px 16px;
@@ -63,14 +72,17 @@
   font-family: "Poppins", sans-serif !important;
 }
 
-.top-input > input:focus {
+.top-input .input-contact > input:focus {
   outline: 0;
   border: 1px solid #d9dbdd;
 }
 
-.top-input > input:focus-visible {
+.top-input .input-contact > input:focus-visible {
   outline: 0;
   border: 1px solid #d9dbdd;
+}
+.mid-input {
+  position: relative;
 }
 .mid-input > textarea:focus {
   outline: 0;
@@ -92,4 +104,34 @@
 
 .mid-input > textarea::-webkit-scrollbar {
   display: none;
+}
+
+.errorText {
+  background: white;
+  padding: 2px 10px;
+  border-radius: 8px 8px 8px 0px;
+  position: absolute;
+  top: -22px;
+  font-size: 12px;
+  left: 10px;
+  display: none;
+  color: #c73f3f;
+}
+
+.errorText.textArea {
+  bottom: -20px;
+  right: 20%;
+  top: initial;
+  left: initial;
+  border-radius: 0px 8px 8px 8px;
+}
+.valid-email {
+  display: none;
+  color: #c73f3f;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  /* backround: #9da9b49e; */
+  font-weight: 700;
 }

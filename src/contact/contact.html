@@ -20,6 +20,10 @@
       href="https://fonts.cdnfonts.com/css/svn-gilroy?styles=55332,55331"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    />
     <link rel="icon" href="../../assets/imgs/favicon.png" />
     <title>Contact - EMTC</title>
   </head>
@@ -122,17 +126,41 @@
             </div>
             <div class="get-input">
               <div class="top-input">
-                <input placeholder="Your name" type="text" />
-                <input placeholder="Your email" type="text" />
+                <div class="input-contact">
+                  <input
+                    class="nameInput"
+                    placeholder="Your name"
+                    type="text"
+                  />
+                  <div class="errorText errorTextname">
+                    Please fill out this fields
+                  </div>
+                </div>
+                <div class="input-contact">
+                  <input
+                    class="emailInput"
+                    placeholder="Your email"
+                    type="text"
+                    onkeydown="handchangeValue(this.value)"
+                  />
+                  <div class="errorText errorTextemail">
+                    Please fill out this fields
+                  </div>
+                </div>
+                <div class="valid-email">Not invalid email address!</div>
               </div>
               <div class="mid-input">
                 <textarea
                   placeholder="Enter your message here"
                   type="text"
+                  class="messageInput"
                 ></textarea>
+                <div class="errorText textArea">
+                  Please fill out this fields
+                </div>
               </div>
               <div class="btn-submit">
-                <span class="btn"
+                <span class="btn" onclick="submitTouch(event)"
                   >SUBMIT
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -195,8 +223,9 @@
                   class="field-input"
                   type="text"
                   placeholder="Email address"
+                  onkeydown="validEmail(this.value)"
                 />
-                <button class="btn-footer">
+                <button onclick="btnClickFooter()" class="btn-footer">
                   <svg
                     width="24"
                     height="24"
@@ -218,6 +247,7 @@
                     </defs>
                   </svg>
                 </button>
+                <div class="valid-email-footer">Not invalid email address!</div>
               </div>
               <p class="footer_subtext" style="width: 85%">
                 Subcribe to our newsletter to receive our products
@@ -239,5 +269,9 @@
         </div>
       </div>
     </div>
+    <script src="../js/contact.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
   </body>
 </html>

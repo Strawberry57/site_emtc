@@ -60,7 +60,7 @@
 .news-detail-box > a > img {
   width: 100%;
   object-fit: cover;
-  min-height: 160px;
+  height: 160px;
 }
 
 .text-news-related {

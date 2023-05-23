@@ -25,7 +25,7 @@
 
 @media (max-width: 740px) {
   .news-content {
-    padding: 60px 10px 20px 10px;
+    padding: 40px 10px 20px 10px;
   }
   .news-detail {
     flex-direction: column;
@@ -53,6 +53,7 @@
   .news-sub-content > a > img {
     width: 30%;
     object-fit: cover;
+    height: auto;
   }
   .infor-news {
     flex: 1;

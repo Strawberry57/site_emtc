@@ -56,6 +56,7 @@
 .field {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .field > img {
@@ -119,6 +120,16 @@
 .footer-logo .footer_subtext {
   color: #2b5aa9;
   font-weight: 400;
+}
+.valid-email-footer {
+  display: none;
+  color: #c73f3f;
+  font-size: 12px;
+  position: absolute;
+  bottom: -15px;
+  left: 5px;
+  /* backround: #9da9b49e; */
+  font-weight: 700;
 }
 
 @media (max-width: 1023px) {

@@ -486,19 +486,31 @@
                   class="field-input"
                   type="text"
                   placeholder="Email address"
+                  onkeydown="validEmail(this.value)"
                 />
-               <button class="btn-footer">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button onclick="btnClickFooter()" class="btn-footer">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <g clip-path="url(#clip0_1960_3603)">
-                    <path class="rowpath" d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z" fill="#FDFDFD"/>
+                      <path
+                        class="rowpath"
+                        d="M9.99984 6L8.58984 7.41L13.1698 12L8.58984 16.59L9.99984 18L15.9998 12L9.99984 6Z"
+                        fill="#FDFDFD"
+                      />
                     </g>
                     <defs>
-                    <clipPath id="clip0_1960_3603">
-                    <rect width="24" height="24" fill="white"/>
-                    </clipPath>
+                      <clipPath id="clip0_1960_3603">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
                     </defs>
-                    </svg>
-               </button>
+                  </svg>
+                </button>
+                <div class="valid-email-footer">Not invalid email address!</div>
               </div>
               <p class="footer_subtext" style="width: 85%">
                 Subcribe to our newsletter to receive our products announcements.
@@ -519,6 +531,7 @@
         </div>
     </div>
     </div>
+    <script src="../js/footer.js"></script>
     <script src="../js/carousel.js" ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
