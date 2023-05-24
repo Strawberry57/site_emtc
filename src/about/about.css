@@ -97,8 +97,13 @@
 }
 .achivement-about {
   display: flex;
-  /* gap: 32px; */
-  justify-content: space-between;
+  gap: 32px;
+  /* justify-content: space-between; */
+  overflow-x: hidden;
+}
+.achivement-wrap {
+  display: flex;
+  gap: 32px;
 }
 
 .achivement-box {
@@ -107,6 +112,11 @@
   flex-direction: column;
   gap: 24px;
   cursor: pointer;
+}
+.achivement-box > img {
+  height: 315px;
+  width: 232px;
+  object-fit: cover;
 }
 
 .achivement-box > p {
@@ -209,6 +219,12 @@
 .timeline-block .timeline-content > img {
   height: auto;
   width: auto;
+}
+.pagintor {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 @keyframes cd-bounce-2-inverse {

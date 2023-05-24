@@ -11,7 +11,13 @@
   .achivement-box {
     max-width: 170px;
   }
-  .text-timeline {
+  .achivement-wrap {
+    gap: 20px;
+  }
+  .achivement-box > img {
+    height: 204px;
+    width: 160px;
+    object-fit: cover;
   }
 }
 
@@ -46,6 +52,9 @@
     height: auto;
   }
   .achivement-about::-webkit-scrollbar {
+    display: none;
+  }
+  .pagintor {
     display: none;
   }
 }
