@@ -8,7 +8,8 @@ function validEmail(e) {
   return false;
 }
 
-function btnClickFooter() {
+function btnClickFooter(e) {
+  e.preventDefault();
   const emailInput = document.querySelector(".field-input");
   const valid = validEmail(emailInput.value);
   if (!valid) {

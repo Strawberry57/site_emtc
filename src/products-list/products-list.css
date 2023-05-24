@@ -79,6 +79,8 @@
   padding: 12px 34px;
   cursor: pointer;
   background-color: #557bba;
+  height: auto;
+  width: auto;
 }
 .expand-box {
   position: relative;
@@ -113,6 +115,10 @@
   color: #1e1e1f;
   cursor: pointer;
   z-index: 10;
+}
+.expand-btn > img {
+  height: auto;
+  width: auto;
 }
 
 .products-content {

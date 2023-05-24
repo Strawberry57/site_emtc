@@ -57,11 +57,13 @@
 }
 .box-content-image {
   position: relative;
+  display: flex;
 }
-/* .box-content-image > img {
-  height: 100%;
-  width: 100%;
-} */
+
+.box-content-image > img {
+  height: 320px;
+  width: 496px;
+}
 .select-box-image {
   position: absolute;
   display: flex;

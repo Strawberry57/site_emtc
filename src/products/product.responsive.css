@@ -50,6 +50,7 @@
   }
   .box-content-image > img {
     width: 100%;
+    height: auto;
   }
   .select-box-image {
     /* left: 11%;
