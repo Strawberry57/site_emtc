@@ -206,6 +206,10 @@
   margin-left: 0 !important;
   width: 45%;
 }
+.timeline-block .timeline-content > img {
+  height: auto;
+  width: auto;
+}
 
 @keyframes cd-bounce-2-inverse {
   0% {
