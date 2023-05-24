@@ -53,3 +53,8 @@
   color: #1e1e1f;
   line-height: 24px;
 }
+.sub-img-service {
+  height: 175px !important;
+  width: 245px !important;
+  object-fit: cover;
+}

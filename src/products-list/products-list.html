@@ -143,6 +143,7 @@
               class="search-input"
               type="text"
               placeholder="Search..."
+              onkeydown="keydownFnc(this.value,event)"
             />
             <img
               onclick="searchFnc()"
@@ -162,7 +163,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container container-product">
         <div
           id="all"
           class="products-content content-container non-select select-all"
@@ -331,6 +332,10 @@
               </div>
             </div>
           </a>
+        </div>
+        <div class="loading">
+          <div class="loader"></div>
+          Loading...
         </div>
       </div>
       <div class="container">

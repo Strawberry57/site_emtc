@@ -8,88 +8,6 @@ const fill_right = document.querySelector(".fill_right_carousel");
 const overlay = document.querySelector(".overlay");
 let countPage = 1;
 let maxPage = 4;
-const listProduct = [
-  {
-    name: "Bạc hàn",
-    img: "../../assets/imgs/bac-han.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bạc thúc",
-    img: "../../assets/imgs/bac-thuc.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ Toyota",
-    img: "../../assets/imgs/auto_by.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ xe máy",
-    img: "../../assets/imgs/bo-dung-cu-xe-may.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bạc hàn",
-    img: "../../assets/imgs/bac-han.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bạc thúc",
-    img: "../../assets/imgs/bac-thuc.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ Toyota",
-    img: "../../assets/imgs/auto_by.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ xe máy",
-    img: "../../assets/imgs/bo-dung-cu-xe-may.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bạc hàn",
-    img: "../../assets/imgs/bac-han.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bạc thúc",
-    img: "../../assets/imgs/bac-thuc.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ Toyota",
-    img: "../../assets/imgs/auto_by.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ xe máy",
-    img: "../../assets/imgs/bo-dung-cu-xe-may.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bạc hàn",
-    img: "../../assets/imgs/bac-han.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bạc thúc",
-    img: "../../assets/imgs/bac-thuc.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ Toyota",
-    img: "../../assets/imgs/auto_by.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-  {
-    name: "Bộ dụng cụ xe máy",
-    img: "../../assets/imgs/bo-dung-cu-xe-may.png",
-    text: "Lorem ipsum dolor sit amet consectetur. Fusce volutpat faucibus viverra laoreet ",
-  },
-];
 
 expand_options.style.display = "none";
 // renderProduct();
@@ -105,36 +23,42 @@ expand_btn.addEventListener("click", () => {
 });
 
 function selectFilterFnc(type) {
-  const url = urlParams.get("value");
-  const urlPage = urlParams.get("page");
-  if (type === "AtZ") {
-    expand_text.innerHTML = "Alphabetically: A to Z";
-    expand_options.style.display = "none";
-    overlay.style.display = "none";
-    if (url && !urlPage) {
-      window.location.href = `products-list.html?value=${url}&sort=AtZ`;
-    } else if (!url && urlPage) {
-      window.location.href = `products-list.html?sort=AtZ&page=${urlPage}`;
-    } else if (url && urlPage) {
-      window.location.href = `products-list.html?value=${url}&sort=AtZ&page=${urlPage}`;
-    } else {
-      window.location.href = `products-list.html?sort=AtZ`;
+  const eRemoveClass = document.querySelector(".select-all");
+  eRemoveClass.classList.remove("select-all");
+  const loading = document.querySelector(".loading");
+  loading.style.display = "flex";
+  setTimeout(() => {
+    const url = urlParams.get("value");
+    const urlPage = urlParams.get("page");
+    if (type === "AtZ") {
+      expand_text.innerHTML = "Alphabetically: A to Z";
+      expand_options.style.display = "none";
+      overlay.style.display = "none";
+      if (url && !urlPage) {
+        window.location.href = `products-list.html?value=${url}&sort=AtZ`;
+      } else if (!url && urlPage) {
+        window.location.href = `products-list.html?sort=AtZ&page=${urlPage}`;
+      } else if (url && urlPage) {
+        window.location.href = `products-list.html?value=${url}&sort=AtZ&page=${urlPage}`;
+      } else {
+        window.location.href = `products-list.html?sort=AtZ`;
+      }
     }
-  }
-  if (type === "ZtA") {
-    expand_text.innerHTML = "Alphabetically: Z to A";
-    expand_options.style.display = "none";
-    overlay.style.display = "none";
-    if (url && !urlPage) {
-      window.location.href = `products-list.html?value=${url}&sort=ZtA`;
-    } else if (!url && urlPage) {
-      window.location.href = `products-list.html?sort=ZtA&page=${urlPage}`;
-    } else if (url && urlPage) {
-      window.location.href = `products-list.html?value=${url}&sort=ZtA&page=${urlPage}`;
-    } else {
-      window.location.href = `products-list.html?sort=ZtA`;
+    if (type === "ZtA") {
+      expand_text.innerHTML = "Alphabetically: Z to A";
+      expand_options.style.display = "none";
+      overlay.style.display = "none";
+      if (url && !urlPage) {
+        window.location.href = `products-list.html?value=${url}&sort=ZtA`;
+      } else if (!url && urlPage) {
+        window.location.href = `products-list.html?sort=ZtA&page=${urlPage}`;
+      } else if (url && urlPage) {
+        window.location.href = `products-list.html?value=${url}&sort=ZtA&page=${urlPage}`;
+      } else {
+        window.location.href = `products-list.html?sort=ZtA`;
+      }
     }
-  }
+  }, 2000);
 }
 
 // function renderProduct() {
@@ -278,3 +202,10 @@ overlay.addEventListener("click", () => {
   expand_options.style.display = "none";
   overlay.style.display = "none";
 });
+
+function keydownFnc(value, e) {
+  text = value;
+  if (e.keyCode === 13) {
+    searchFnc();
+  }
+}
