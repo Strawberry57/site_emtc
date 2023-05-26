@@ -37,8 +37,12 @@
   }
   .sub-img-service > img {
     width: 31.5% !important;
+    object-fit: cover;
   }
   .sub-content {
     width: 100%;
+  }
+  .sub-img-service {
+    width: initial !important;
   }
 }
