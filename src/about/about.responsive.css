@@ -44,17 +44,16 @@
     text-overflow: ellipsis;
   }
   .achivement-about {
-    overflow-x: auto;
     gap: 10px;
   }
   .achivement-box > img {
-    width: auto;
-    height: auto;
+    width: 170px;
+    height: 230px;
   }
   .achivement-about::-webkit-scrollbar {
     display: none;
   }
-  .pagintor {
-    display: none;
+  .achivement-wrap {
+    gap: 24px;
   }
 }

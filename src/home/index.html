@@ -45,8 +45,9 @@
         </div>
       </div>
       </div>
-      <div class="container container-hero-box">
-        <div class="hero-box content-container">
+      <div class="container container-hero-box hero-container">
+        <img class="background-dynamic" alt="background" src="../../assets/imgs/hero-background.png">
+        <div class="hero-box content-container ">
           <div class="hero-box-detail">
             <h3 style="font-size: 56px">Manufacturing Dealings, Distributing Quality</h3>
             <p>
@@ -334,7 +335,7 @@
      <div class="container">
         <div class="news-box content-container">
           <div class="news-detail">
-            <div class="news-img newsss">
+            <div class="news-img newsss" onclick="handleNavigate('abc')">
               <img alt="" src="../../assets/imgs/news.png" />
               <img class="background-news" alt="" src="../../assets/imgs/bg.png" />
               <div class="infor">
@@ -364,8 +365,9 @@
           </div>
         </div>
      </div>
-    <div class="container container-contact-box">
-        <div class="contact-box content-container">
+    <div class="container container-contact-box hero-container">
+      <img class="background-dynamic" alt="background" src="../../assets/imgs/backg_get_touch.png" />
+        <div class="contact-box content-container ">
           <div class="contact-text">
             <h3>Get In Touch</h3>
             <p>
@@ -403,11 +405,12 @@
                 <textarea
                   placeholder="Enter your message here"
                   class="message textmessage messageInput"
+                  onchange="checkValidateText(this.value)"
                 ></textarea>
                 <div class="errorText textArea">Please fill out this fields</div>
              </div>
               <div>
-                <button type="submit" onclick="submitTouch(event)" class="btn"
+                <button type="submit" onclick="submitTouch(event, this)" class="btn"
                   >SUBMIT
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

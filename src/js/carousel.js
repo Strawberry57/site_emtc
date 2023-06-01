@@ -173,8 +173,9 @@ function playVideo() {
   }
 }
 
-function submitTouch(e) {
+function submitTouch(e, _this) {
   e.preventDefault();
+  _this.disabled = true;
   const nameInput = document.querySelector(".nameInput");
   const emailInput = document.querySelector(".emailInput");
   const messageInput = document.querySelector(".messageInput");
@@ -200,24 +201,30 @@ function submitTouch(e) {
     textArea.style.display = "none";
   }
   const isValid = handchangeValue(emailInput.value);
-  if (!isValid) {
+  // if (!isValid) {
+  //   return;
+  // }
+
+  const isTooLength = checkValidateText(messageInput.value);
+  if (!isTooLength) {
     return;
   }
-  $.ajax({
-    url: "/umbraco/surface/GetInTouchSurface/ContactForm",
-    method: "GET",
-    data: {
-      Email: nameInput.value,
-      Name: emailInput.value,
-      Message: messageInput.value,
-    },
-    success: function (data) {
-      // thành công
-      toastr.success("Thao tác thành công!");
-      // thất bại
-      toastr.error("Đã xảy ra lỗi!");
-    },
-  });
+  toastr.success("Thao tác thành công!");
+  // $.ajax({
+  //   url: "/umbraco/surface/GetInTouchSurface/ContactForm",
+  //   method: "GET",
+  //   data: {
+  //     Email: nameInput.value,
+  //     Name: emailInput.value,
+  //     Message: messageInput.value,
+  //   },
+  //   success: function (data) {
+  //     // thành công
+  //     toastr.success("Thao tác thành công!");
+  //     // thất bại
+  //     toastr.error("Đã xảy ra lỗi!");
+  //   },
+  // });
 }
 
 function handchangeValue(e) {
@@ -228,4 +235,18 @@ function handchangeValue(e) {
   }
   validemail.style.display = "block";
   return false;
+}
+
+function checkValidateText(e) {
+  if (e.length > 500) {
+    toastr.error("content.....");
+    return false;
+  }
+  return true;
+}
+
+function handleNavigate(e) {
+  console.log(e);
+  const serverAddress = window.location.href;
+  location.href = `${serverAddress}/src/news-detail/news-detail.html`;
 }

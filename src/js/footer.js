@@ -1,6 +1,14 @@
 function validEmail(e) {
   const validemail = document.querySelector(".valid-email-footer");
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e)) {
+  if (!e) {
+    validemail.style.display = "none";
+    return;
+  }
+  if (
+    /^[^<>()[\]\\.,;:\s@"]+@[^<>()[\]\\.,;:\s@"]+\.[^<>()[\]\\.,;:\s@"]{2,}$/.test(
+      e
+    )
+  ) {
     validemail.style.display = "none";
     return true;
   }
